@@ -1,1323 +1,1408 @@
 let questions = [
 
-  // =========================
-  // ALPHABETS, STRINGS & LANGUAGES
-  // =========================
+  // ==========================================
+  // FUNDAMENTALS OF DATA
+  // ==========================================
 
   {
     numb: 1,
-    question: "In Theory of Computation, what is an alphabet?",
-    answer: "A finite non-empty set of symbols",
-    options: [
-      "A finite non-empty set of symbols",
-      "An infinite set of states",
-      "A collection of machines",
-      "A set of grammars"
-    ]
+    question: "The term 'Data' is derived from which Latin word?",
+    answer: "Datum",
+    options: ["Datum", "Scientia", "Datae", "Datus"]
   },
 
   {
     numb: 2,
-    question: "Which symbol is commonly used to represent an alphabet?",
-    answer: "Σ",
-    options: ["Q", "Σ", "F", "δ"]
+    question: "Data represents:",
+    answer: "Recorded facts, observations, measurements, or symbols",
+    options: [
+      "Only numerical values",
+      "Only text",
+      "Recorded facts, observations, measurements, or symbols",
+      "Only computer programs"
+    ]
   },
 
   {
     numb: 3,
-    question: "Which of the following can be an alphabet?",
-    answer: "{0,1}",
+    question: "An entity is something that:",
+    answer: "Can be uniquely identified and described by attributes",
     options: [
-      "{0,1}",
-      "{0,1,2,...} only",
-      "All real numbers",
-      "All English sentences"
+      "Can only exist physically",
+      "Can be uniquely identified and described by attributes",
+      "Must always be a number",
+      "Must be a database"
     ]
   },
 
   {
     numb: 4,
-    question: "A string is a finite sequence of:",
-    answer: "Symbols from an alphabet",
-    options: [
-      "States",
-      "Symbols from an alphabet",
-      "Grammars",
-      "Machines"
-    ]
+    question: "Which of the following is an example of an entity?",
+    answer: "Student",
+    options: ["Student", "Marks only", "Age only", "Name only"]
   },
 
   {
     numb: 5,
-    question: "What is the length of a string?",
-    answer: "Number of symbols in the string",
+    question: "An attribute is:",
+    answer: "A measurable or describable property of an entity",
     options: [
-      "Number of states",
-      "Number of symbols in the string",
-      "Number of languages",
-      "Number of transitions"
+      "A database server",
+      "A measurable or describable property of an entity",
+      "A programming language",
+      "A machine learning algorithm"
     ]
   },
 
   {
     numb: 6,
-    question: "What is the length of the empty string ε?",
-    answer: "0",
-    options: ["0", "1", "-1", "Undefined"]
+    question: "Which is an attribute of a Student entity?",
+    answer: "Marks",
+    options: ["Student", "University", "Marks", "Database"]
   },
 
   {
     numb: 7,
-    question: "Which symbol represents the empty string?",
-    answer: "ε",
-    options: ["Σ", "ε", "δ", "λ"]
+    question: "Data can exist in which forms?",
+    answer: "Numerical, textual, graphical, audio, and video",
+    options: [
+      "Only numerical",
+      "Only textual",
+      "Only graphical",
+      "Numerical, textual, graphical, audio, and video"
+    ]
   },
 
   {
     numb: 8,
-    question: "Σ* represents:",
-    answer: "All finite strings over Σ including ε",
-    options: [
-      "Only strings of length 1",
-      "All finite strings over Σ including ε",
-      "Only non-empty strings",
-      "Only alphabet symbols"
-    ]
+    question: "Data is the foundation of:",
+    answer: "Data Science",
+    options: ["Only databases", "Data Science", "Only networking", "Only operating systems"]
   },
 
   {
     numb: 9,
-    question: "Σ+ represents:",
-    answer: "All non-empty strings over Σ",
-    options: [
-      "Only ε",
-      "All finite strings including ε",
-      "All non-empty strings over Σ",
-      "Only strings of length 1"
-    ]
+    question: "Which technology has contributed significantly to the growth of data?",
+    answer: "Internet of Things",
+    options: ["Only printers", "Internet of Things", "Only calculators", "Only keyboards"]
   },
 
   {
     numb: 10,
-    question: "What is the difference between Σ* and Σ+?",
-    answer: "Σ* contains ε, while Σ+ does not",
+    question: "Which of the following is NOT a common form of data?",
+    answer: "Compiler",
+    options: ["Text", "Audio", "Video", "Compiler"]
+  },
+
+  // ==========================================
+  // DIKW
+  // ==========================================
+
+  {
+    numb: 11,
+    question: "What does DIKW stand for?",
+    answer: "Data, Information, Knowledge, Wisdom",
     options: [
-      "Σ+ contains ε, while Σ* does not",
-      "Σ* contains ε, while Σ+ does not",
-      "There is no difference",
-      "Both contain only ε"
+      "Data, Information, Knowledge, Wisdom",
+      "Data, Internet, Knowledge, Web",
+      "Database, Information, Key, Wisdom",
+      "Data, Intelligence, Knowledge, Work"
     ]
   },
 
   {
-    numb: 11,
-    question: "If Σ = {0,1}, which is a string over Σ?",
-    answer: "0101",
-    options: ["012", "0101", "abc", "2ab"]
-  },
-
-  {
     numb: 12,
-    question: "If w = 10101, what is |w|?",
-    answer: "5",
-    options: ["3", "4", "5", "6"]
+    question: "Which comes first in the DIKW hierarchy?",
+    answer: "Data",
+    options: ["Wisdom", "Knowledge", "Information", "Data"]
   },
 
   {
     numb: 13,
-    question: "Which of the following is NOT a string over Σ = {a,b}?",
-    answer: "abc",
-    options: ["aab", "abba", "bbb", "abc"]
+    question: "Which comes after Data in DIKW?",
+    answer: "Information",
+    options: ["Knowledge", "Information", "Wisdom", "Decision"]
   },
 
   {
     numb: 14,
-    question: "Concatenation of two strings means:",
-    answer: "Joining one string after another",
+    question: "Information is best described as:",
+    answer: "Organized, refined, and contextualized data",
     options: [
-      "Deleting both strings",
-      "Joining one string after another",
-      "Reversing both strings",
-      "Sorting symbols"
+      "Raw facts only",
+      "Organized, refined, and contextualized data",
+      "Only numerical data",
+      "Unprocessed data"
     ]
   },
 
   {
     numb: 15,
-    question: "If x = ab and y = cd, then xy is:",
-    answer: "abcd",
-    options: ["cdab", "abcd", "acbd", "badc"]
+    question: "Knowledge is:",
+    answer: "Organized information preserved for repeated use",
+    options: [
+      "Raw data",
+      "Organized information preserved for repeated use",
+      "Only observations",
+      "Only measurements"
+    ]
   },
 
   {
     numb: 16,
-    question: "If x = ab and y = cd, then yx is:",
-    answer: "cdab",
-    options: ["abcd", "cdab", "acbd", "dcba"]
+    question: "Wisdom refers to:",
+    answer: "Judicious application of knowledge, skill, and experience",
+    options: [
+      "Collection of raw data",
+      "Judicious application of knowledge, skill, and experience",
+      "Data storage",
+      "Data duplication"
+    ]
   },
 
   {
     numb: 17,
-    question: "The reverse of the string abc is:",
-    answer: "cba",
-    options: ["abc", "bac", "cba", "acb"]
+    question: "The correct DIKW order is:",
+    answer: "Data → Information → Knowledge → Wisdom",
+    options: [
+      "Knowledge → Data → Wisdom → Information",
+      "Data → Information → Knowledge → Wisdom",
+      "Wisdom → Knowledge → Data → Information",
+      "Information → Data → Wisdom → Knowledge"
+    ]
   },
 
   {
     numb: 18,
-    question: "The reverse of ε is:",
-    answer: "ε",
-    options: ["0", "1", "ε", "Undefined"]
+    question: "Class average calculated from student marks is an example of:",
+    answer: "Information",
+    options: ["Raw data", "Information", "Wisdom", "Entity"]
   },
 
   {
     numb: 19,
-    question: "A substring of a string is:",
-    answer: "A consecutive part of the string",
-    options: [
-      "A non-consecutive part only",
-      "A consecutive part of the string",
-      "Always the entire string",
-      "Always one symbol"
-    ]
+    question: "Identifying a relationship between attendance and marks represents:",
+    answer: "Knowledge",
+    options: ["Data", "Information", "Knowledge", "Entity"]
   },
 
   {
     numb: 20,
-    question: "A prefix of a string must occur:",
-    answer: "At the beginning of the string",
-    options: [
-      "At the end",
-      "At the beginning of the string",
-      "Only in the middle",
-      "Outside the string"
-    ]
+    question: "Taking action based on knowledge represents:",
+    answer: "Wisdom",
+    options: ["Data", "Information", "Knowledge", "Wisdom"]
   },
+
+  // ==========================================
+  // DATA QUALITY & VALUE
+  // ==========================================
 
   {
     numb: 21,
-    question: "A suffix of a string must occur:",
-    answer: "At the end of the string",
-    options: [
-      "At the beginning",
-      "At the end of the string",
-      "Only in the middle",
-      "Anywhere outside the string"
-    ]
+    question: "Which characteristic indicates whether recorded data correctly represent true values?",
+    answer: "Accuracy",
+    options: ["Completeness", "Accuracy", "Rarity", "Novelty"]
   },
 
   {
     numb: 22,
-    question: "A language over an alphabet is:",
-    answer: "A set of strings over the alphabet",
+    question: "Completeness refers to:",
+    answer: "Presence of all required data",
     options: [
-      "A set of states",
-      "A set of strings over the alphabet",
-      "A set of transitions",
-      "A grammar only"
+      "Correctness of every value",
+      "Presence of all required data",
+      "Number of databases",
+      "Data visualization"
     ]
   },
 
   {
     numb: 23,
-    question: "Which of the following can be a language over {0,1}?",
-    answer: "{0, 01, 101}",
-    options: [
-      "{0, 01, 101}",
-      "{a,b,c}",
-      "{2,3,4}",
-      "{x,y,z}"
-    ]
+    question: "Missing values mainly affect:",
+    answer: "Completeness",
+    options: ["Completeness", "Novelty", "Rarity", "Scalability"]
   },
 
   {
     numb: 24,
-    question: "Can the empty string ε belong to a language?",
-    answer: "Yes",
-    options: ["Yes", "No", "Only in DFA", "Only in NFA"]
+    question: "A phone number is present but incorrect. This is mainly a problem of:",
+    answer: "Accuracy",
+    options: ["Completeness", "Accuracy", "Rarity", "Novelty"]
   },
 
   {
     numb: 25,
-    question: "Which operation combines two strings in sequence?",
-    answer: "Concatenation",
-    options: [
-      "Union",
-      "Concatenation",
-      "Intersection",
-      "Complement"
-    ]
+    question: "A phone number is missing from a required field. This is mainly a problem of:",
+    answer: "Completeness",
+    options: ["Accuracy", "Completeness", "Novelty", "Rarity"]
   },
-
-  // =========================
-  // GRAMMARS
-  // =========================
 
   {
     numb: 26,
-    question: "A grammar is formally represented by:",
-    answer: "G = (N, T, P, S)",
+    question: "Consistency means data should be:",
+    answer: "Uniform, coherent, and free from contradictions",
     options: [
-      "G = (Q, Σ, δ, F)",
-      "G = (N, T, P, S)",
-      "G = (Q, T, P, F)",
-      "G = (N, Σ, δ, S)"
+      "Random",
+      "Uniform, coherent, and free from contradictions",
+      "Always numerical",
+      "Always complete"
     ]
   },
 
   {
     numb: 27,
-    question: "In G = (N,T,P,S), N represents:",
-    answer: "Non-terminals",
-    options: [
-      "Terminals",
-      "Non-terminals",
-      "Productions",
-      "Start states"
-    ]
+    question: "Which is a common data quality problem?",
+    answer: "Duplicate records",
+    options: ["Duplicate records", "Good formatting", "Correct values", "Complete records"]
   },
 
   {
     numb: 28,
-    question: "In a grammar, T represents:",
-    answer: "Terminals",
+    question: "Which of the following can reduce data quality?",
+    answer: "Typographical errors",
     options: [
-      "Terminals",
-      "Non-terminals",
-      "Transitions",
-      "States"
+      "Validation",
+      "Typographical errors",
+      "Correct formatting",
+      "Complete records"
     ]
   },
 
   {
     numb: 29,
-    question: "In a grammar, P represents:",
-    answer: "Production rules",
+    question: "Data quality improvement commonly involves:",
+    answer: "Cleaning and validation",
     options: [
-      "States",
-      "Production rules",
-      "Final states",
-      "Input symbols"
+      "Only visualization",
+      "Cleaning and validation",
+      "Only storage",
+      "Only collection"
     ]
   },
 
   {
     numb: 30,
-    question: "In a grammar, S represents:",
-    answer: "Start symbol",
+    question: "Rarity refers to data representing:",
+    answer: "Uncommon or infrequent observations",
     options: [
-      "Final state",
-      "Start symbol",
-      "Terminal symbol",
-      "Transition function"
+      "Common observations",
+      "Uncommon or infrequent observations",
+      "Only numerical values",
+      "Only duplicate records"
     ]
   },
 
   {
     numb: 31,
-    question: "Which component of a grammar contains production rules?",
-    answer: "P",
-    options: ["N", "T", "P", "S"]
+    question: "Why can rare data be valuable?",
+    answer: "They may reveal anomalies or hidden patterns",
+    options: [
+      "They are always accurate",
+      "They may reveal anomalies or hidden patterns",
+      "They are always complete",
+      "They require no analysis"
+    ]
   },
 
   {
     numb: 32,
-    question: "Which component represents the set of non-terminals?",
-    answer: "N",
-    options: ["N", "T", "P", "S"]
+    question: "Novelty refers to data that provide:",
+    answer: "New or previously unknown information",
+    options: [
+      "Duplicate information",
+      "New or previously unknown information",
+      "Only old information",
+      "Only numerical information"
+    ]
   },
 
   {
     numb: 33,
-    question: "Which component represents the set of terminals?",
-    answer: "T",
-    options: ["N", "T", "P", "S"]
+    question: "Which characteristic supports innovation and discovery?",
+    answer: "Novelty",
+    options: ["Novelty", "Duplication", "Inconsistency", "Missingness"]
   },
+
+  // ==========================================
+  // DATA TYPES
+  // ==========================================
 
   {
     numb: 34,
-    question: "Which component represents the starting point of grammar derivation?",
-    answer: "S",
-    options: ["N", "T", "P", "S"]
+    question: "Structured data are generally organized in:",
+    answer: "Rows and columns",
+    options: ["Random files", "Rows and columns", "Images only", "Audio only"]
   },
-
-  // =========================
-  // CHOMSKY HIERARCHY
-  // =========================
 
   {
     numb: 35,
-    question: "How many major types are included in the Chomsky hierarchy?",
-    answer: "Four",
-    options: ["Two", "Three", "Four", "Five"]
+    question: "Which is an example of structured data?",
+    answer: "SQL database",
+    options: ["Video", "SQL database", "Audio", "Social media image"]
   },
 
   {
     numb: 36,
-    question: "Type 0 grammar is known as:",
-    answer: "Unrestricted grammar",
+    question: "Semi-structured data does not follow:",
+    answer: "A fixed relational schema",
     options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
+      "Any structure",
+      "A fixed relational schema",
+      "Any format",
+      "Any organization"
     ]
   },
 
   {
     numb: 37,
-    question: "Type 1 grammar is known as:",
-    answer: "Context-sensitive grammar",
-    options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
-    ]
+    question: "Which is an example of semi-structured data?",
+    answer: "JSON",
+    options: ["JSON", "Relational table", "Image", "Video"]
   },
 
   {
     numb: 38,
-    question: "Type 2 grammar is known as:",
-    answer: "Context-free grammar",
-    options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
-    ]
+    question: "Which is an example of unstructured data?",
+    answer: "Image",
+    options: ["SQL table", "Image", "Relational database", "Structured spreadsheet"]
   },
 
   {
     numb: 39,
-    question: "Type 3 grammar is known as:",
-    answer: "Regular grammar",
+    question: "Unstructured data has:",
+    answer: "No predefined format",
     options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
+      "A fixed relational schema",
+      "No predefined format",
+      "Only numerical values",
+      "Only categorical values"
     ]
   },
 
   {
     numb: 40,
-    question: "Which type of grammar is the most restricted in the Chomsky hierarchy?",
-    answer: "Type 3",
-    options: ["Type 0", "Type 1", "Type 2", "Type 3"]
+    question: "Qualitative data are also called:",
+    answer: "Categorical data",
+    options: ["Numerical data", "Categorical data", "Continuous data", "Ratio data"]
   },
 
   {
     numb: 41,
-    question: "Which type of grammar is the least restricted?",
-    answer: "Type 0",
-    options: ["Type 0", "Type 1", "Type 2", "Type 3"]
+    question: "Which is qualitative data?",
+    answer: "Blood Group",
+    options: ["Height", "Weight", "Blood Group", "Income"]
   },
 
   {
     numb: 42,
-    question: "Type 3 grammar is related to:",
-    answer: "Finite automata",
+    question: "Quantitative data represent:",
+    answer: "Measurable quantities",
     options: [
-      "Turing machines only",
-      "Finite automata",
-      "Pushdown automata only",
-      "Linear bounded automata only"
+      "Only categories",
+      "Measurable quantities",
+      "Only names",
+      "Only descriptions"
     ]
   },
 
   {
     numb: 43,
-    question: "A Type 2 grammar is also called:",
-    answer: "Context-free grammar",
-    options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
-    ]
+    question: "Which is quantitative data?",
+    answer: "Height",
+    options: ["Blood group", "Department", "Height", "City"]
   },
 
   {
     numb: 44,
-    question: "Which grammar type corresponds to regular languages?",
-    answer: "Type 3",
-    options: ["Type 0", "Type 1", "Type 2", "Type 3"]
+    question: "Discrete data contain:",
+    answer: "Countable values",
+    options: [
+      "Only text",
+      "Countable values",
+      "Only continuous measurements",
+      "Only categories"
+    ]
   },
 
   {
     numb: 45,
-    question: "Type 3 productions may have the form:",
-    answer: "A → aB or A → a",
-    options: [
-      "A → aB or A → a",
-      "AB → CD",
-      "S → SS only",
-      "A → BCDE"
-    ]
+    question: "Number of students is an example of:",
+    answer: "Discrete data",
+    options: ["Continuous data", "Discrete data", "Unstructured data", "Nominal data"]
   },
 
   {
     numb: 46,
-    question: "In a right-linear grammar, the non-terminal generally appears:",
-    answer: "On the right side after a terminal",
-    options: [
-      "Before every terminal",
-      "On the right side after a terminal",
-      "Only on the left side",
-      "Only at the beginning of grammar"
-    ]
+    question: "Height is generally an example of:",
+    answer: "Continuous data",
+    options: ["Discrete data", "Continuous data", "Nominal data", "Unstructured data"]
   },
+
+  // ==========================================
+  // PRIMARY / SECONDARY DATA
+  // ==========================================
 
   {
     numb: 47,
-    question: "Which machine recognizes regular languages according to the module?",
-    answer: "Finite automaton",
+    question: "Primary data are:",
+    answer: "Collected directly for a specific purpose",
     options: [
-      "Finite automaton",
-      "Only Turing machine",
-      "Only stack machine",
-      "Only compiler"
+      "Always obtained from government",
+      "Collected directly for a specific purpose",
+      "Always obtained from Kaggle",
+      "Always historical"
     ]
   },
 
-  // =========================
-  // DFA
-  // =========================
-
   {
     numb: 48,
-    question: "DFA stands for:",
-    answer: "Deterministic Finite Automaton",
-    options: [
-      "Deterministic Finite Automaton",
-      "Dynamic Finite Algorithm",
-      "Deterministic Formal Automaton",
-      "Direct Finite Automaton"
-    ]
+    question: "Which is an example of primary data collection?",
+    answer: "Survey",
+    options: ["Government report", "Census report", "Survey", "Research article"]
   },
 
   {
     numb: 49,
-    question: "A DFA is formally represented as:",
-    answer: "M = (Q, Σ, δ, q0, F)",
+    question: "Secondary data are:",
+    answer: "Data collected previously by someone else",
     options: [
-      "M = (Q, Σ, δ, q0, F)",
-      "M = (N, T, P, S)",
-      "M = (Q, T, P, S)",
-      "M = (Σ, δ, F)"
+      "Always collected directly",
+      "Data collected previously by someone else",
+      "Always experimental",
+      "Always real-time"
     ]
   },
 
   {
     numb: 50,
-    question: "In DFA, Q represents:",
-    answer: "Set of states",
-    options: [
-      "Input alphabet",
-      "Set of states",
-      "Final transitions",
-      "Output symbols"
-    ]
+    question: "Which is an example of secondary data?",
+    answer: "Government report",
+    options: ["Interview conducted by you", "Government report", "New experiment", "Your questionnaire"]
   },
+
+  // ==========================================
+  // LEVELS OF MEASUREMENT
+  // ==========================================
 
   {
     numb: 51,
-    question: "In DFA, Σ represents:",
-    answer: "Input alphabet",
-    options: [
-      "Set of states",
-      "Input alphabet",
-      "Final states",
-      "Transition table"
-    ]
+    question: "Which measurement scale represents categories without order?",
+    answer: "Nominal",
+    options: ["Nominal", "Ordinal", "Interval", "Ratio"]
   },
 
   {
     numb: 52,
-    question: "In DFA, δ represents:",
-    answer: "Transition function",
-    options: [
-      "Start state",
-      "Transition function",
-      "Final state",
-      "Alphabet"
-    ]
+    question: "Gender is an example of:",
+    answer: "Nominal data",
+    options: ["Nominal data", "Ordinal data", "Interval data", "Ratio data"]
   },
 
   {
     numb: 53,
-    question: "In DFA, q0 represents:",
-    answer: "Initial state",
+    question: "Ordinal data contain:",
+    answer: "Ordered categories",
     options: [
-      "Final state",
-      "Initial state",
-      "Dead state",
-      "Output state"
+      "Categories without order",
+      "Ordered categories",
+      "Equal intervals with true zero",
+      "Only numerical measurements"
     ]
   },
 
   {
     numb: 54,
-    question: "In DFA, F represents:",
-    answer: "Set of final states",
-    options: [
-      "Set of inputs",
-      "Set of final states",
-      "Transition function",
-      "Start state"
-    ]
+    question: "Satisfaction rating is an example of:",
+    answer: "Ordinal",
+    options: ["Nominal", "Ordinal", "Interval", "Ratio"]
   },
 
   {
     numb: 55,
-    question: "The DFA transition function is:",
-    answer: "δ : Q × Σ → Q",
-    options: [
-      "δ : Q × Σ → Q",
-      "δ : Q → Σ",
-      "δ : Σ → Q × Q",
-      "δ : Q × Q → Σ"
-    ]
+    question: "Which scale has equal intervals but no true zero?",
+    answer: "Interval",
+    options: ["Nominal", "Ordinal", "Interval", "Ratio"]
   },
 
   {
     numb: 56,
-    question: "For every state and input symbol, a DFA has:",
-    answer: "Exactly one next state",
-    options: [
-      "Zero next states",
-      "Exactly one next state",
-      "Multiple mandatory next states",
-      "Two final states"
-    ]
+    question: "Temperature in Celsius is an example of:",
+    answer: "Interval",
+    options: ["Nominal", "Ordinal", "Interval", "Ratio"]
   },
 
   {
     numb: 57,
-    question: "The word deterministic means:",
-    answer: "Only one next state is determined",
-    options: [
-      "No next state exists",
-      "Only one next state is determined",
-      "Many next states are mandatory",
-      "The machine has no states"
-    ]
+    question: "Which scale has equal intervals and a true zero?",
+    answer: "Ratio",
+    options: ["Nominal", "Ordinal", "Interval", "Ratio"]
   },
 
   {
     numb: 58,
-    question: "Can a DFA have multiple transitions for the same state and same input symbol?",
-    answer: "No",
-    options: ["Yes", "No", "Only for ε", "Only for final states"]
+    question: "Height is an example of:",
+    answer: "Ratio",
+    options: ["Nominal", "Ordinal", "Interval", "Ratio"]
   },
 
   {
     numb: 59,
-    question: "A DFA accepts a string when computation ends in:",
-    answer: "A final state",
-    options: [
-      "Initial state only",
-      "A final state",
-      "Any state",
-      "No state"
-    ]
+    question: "Income is generally classified as:",
+    answer: "Ratio data",
+    options: ["Nominal", "Ordinal", "Interval", "Ratio"]
   },
+
+  // ==========================================
+  // DATA SOURCES
+  // ==========================================
 
   {
     numb: 60,
-    question: "In a DFA, each input symbol causes:",
-    answer: "Exactly one transition",
+    question: "Which is a common source of Data Science data?",
+    answer: "Relational databases",
     options: [
-      "Exactly one transition",
-      "No transition always",
-      "Multiple transitions",
-      "Only ε-transition"
+      "Relational databases",
+      "Only keyboards",
+      "Only monitors",
+      "Only compilers"
     ]
   },
 
   {
     numb: 61,
-    question: "Which machine has exactly one computation path for an input string?",
-    answer: "DFA",
-    options: ["DFA", "NFA", "ε-NFA", "Grammar"]
+    question: "Which source stores data in tabular relational form?",
+    answer: "Relational database",
+    options: ["Relational database", "Image", "Video", "Audio"]
   },
 
   {
     numb: 62,
-    question: "A DFA can be represented using:",
-    answer: "Transition diagram",
+    question: "CSV is commonly used for:",
+    answer: "Storing tabular data",
     options: [
-      "Only equations",
-      "Transition diagram",
-      "Only grammar",
-      "Only source code"
+      "Storing tabular data",
+      "Only storing images",
+      "Only storing audio",
+      "Only running programs"
     ]
   },
 
   {
     numb: 63,
-    question: "A DFA transition diagram uses arrows to represent:",
-    answer: "Transitions",
-    options: [
-      "Languages",
-      "Transitions",
-      "Grammars",
-      "Strings only"
-    ]
+    question: "REST APIs can be used for:",
+    answer: "Data acquisition",
+    options: ["Data acquisition", "Only visualization", "Only printing", "Only compilation"]
   },
 
   {
     numb: 64,
-    question: "The initial state in a DFA is indicated by:",
-    answer: "An incoming arrow from outside",
-    options: [
-      "A double circle",
-      "An incoming arrow from outside",
-      "A square",
-      "A star"
-    ]
+    question: "Web scraping is a method of collecting data from:",
+    answer: "Websites",
+    options: ["Databases only", "Websites", "RAM only", "CPU only"]
   },
 
   {
     numb: 65,
-    question: "Final states in a DFA are generally represented by:",
-    answer: "Double circles",
-    options: [
-      "Squares",
-      "Single arrows",
-      "Double circles",
-      "Triangles"
-    ]
+    question: "Which device can continuously generate sensor data?",
+    answer: "IoT device",
+    options: ["IoT device", "Printer only", "Keyboard only", "Monitor only"]
   },
-
-  // =========================
-  // NFA
-  // =========================
 
   {
     numb: 66,
-    question: "NFA stands for:",
-    answer: "Nondeterministic Finite Automaton",
+    question: "Which is a modern data source?",
+    answer: "Social media platforms",
     options: [
-      "Nondeterministic Finite Automaton",
-      "New Finite Automaton",
-      "Non-Finite Algorithm",
-      "Normal Finite Automaton"
+      "Social media platforms",
+      "Only calculators",
+      "Only compilers",
+      "Only text editors"
     ]
   },
 
+  // ==========================================
+  // DATA REPRESENTATION
+  // ==========================================
+
   {
     numb: 67,
-    question: "The NFA transition function is:",
-    answer: "δ : Q × Σ → 2^Q",
-    options: [
-      "δ : Q × Σ → Q",
-      "δ : Q × Σ → 2^Q",
-      "δ : Q → Σ",
-      "δ : Σ → Q"
-    ]
+    question: "Computers store data fundamentally in:",
+    answer: "Binary form",
+    options: ["Decimal only", "Binary form", "Roman numerals", "Text only"]
   },
 
   {
     numb: 68,
-    question: "In an NFA, for a state and input symbol there may be:",
-    answer: "Zero, one, or multiple next states",
-    options: [
-      "Exactly one next state only",
-      "Zero, one, or multiple next states",
-      "Only two next states",
-      "Only final states"
-    ]
+    question: "Which is a common data representation?",
+    answer: "Integer",
+    options: ["Integer", "Algorithm only", "Compiler only", "Operating system"]
   },
 
   {
     numb: 69,
-    question: "NFA can have:",
-    answer: "Multiple possible paths",
-    options: [
-      "Only one possible path",
-      "Multiple possible paths",
-      "No paths",
-      "Only final paths"
-    ]
+    question: "Which data type represents True/False values?",
+    answer: "Boolean",
+    options: ["String", "Boolean", "Float", "Date"]
   },
 
   {
     numb: 70,
-    question: "An NFA accepts a string if:",
-    answer: "At least one path reaches a final state",
-    options: [
-      "Every path reaches a final state",
-      "At least one path reaches a final state",
-      "No path reaches a final state",
-      "Only the first path reaches a final state"
-    ]
+    question: "BLOB is commonly associated with:",
+    answer: "Multimedia data",
+    options: ["Only integers", "Multimedia data", "Only Boolean values", "Only dates"]
   },
+
+  // ==========================================
+  // DEFINITION & NATURE OF DATA SCIENCE
+  // ==========================================
 
   {
     numb: 71,
-    question: "Can an NFA have zero transitions for a particular state and input?",
-    answer: "Yes",
-    options: ["Yes", "No", "Only in DFA", "Only for final states"]
+    question: "Data Science is an:",
+    answer: "Interdisciplinary field",
+    options: [
+      "Only programming field",
+      "Interdisciplinary field",
+      "Only statistical field",
+      "Only database field"
+    ]
   },
 
   {
     numb: 72,
-    question: "Which machine allows multiple possible next states?",
-    answer: "NFA",
-    options: ["DFA", "NFA", "Only grammar", "Moore machine"]
+    question: "Data Science combines statistics, mathematics, computer science and:",
+    answer: "Domain knowledge",
+    options: ["Only networking", "Domain knowledge", "Only hardware", "Only operating systems"]
   },
 
   {
     numb: 73,
-    question: "Which machine is deterministic?",
-    answer: "DFA",
-    options: ["DFA", "NFA", "ε-NFA", "Both NFA and ε-NFA only"]
+    question: "The main goal of Data Science is to:",
+    answer: "Extract useful insights and support decision-making",
+    options: [
+      "Only store data",
+      "Extract useful insights and support decision-making",
+      "Only create websites",
+      "Only write code"
+    ]
   },
 
   {
     numb: 74,
-    question: "Which machine can have zero next states for an input?",
-    answer: "NFA",
-    options: ["DFA", "NFA", "Both never", "Only Moore"]
+    question: "Data Science works with:",
+    answer: "Structured and unstructured data",
+    options: [
+      "Only structured data",
+      "Only unstructured data",
+      "Structured and unstructured data",
+      "Only numerical data"
+    ]
   },
 
   {
     numb: 75,
-    question: "The main difference between DFA and NFA is related to:",
-    answer: "Number of possible next states",
+    question: "Which question can Data Science help answer?",
+    answer: "What is likely to happen next?",
     options: [
-      "Number of alphabets",
-      "Number of possible next states",
-      "Number of languages",
-      "Number of grammars"
+      "Only what is the file name?",
+      "What is likely to happen next?",
+      "Only what is the database password?",
+      "Only what is the computer brand?"
     ]
   },
 
-  // =========================
-  // DFA-NFA EQUIVALENCE
-  // =========================
-
   {
     numb: 76,
-    question: "Are DFA and NFA equivalent in computational power?",
-    answer: "Yes",
-    options: ["Yes", "No", "Only sometimes", "Only for ε"]
+    question: "Which is a characteristic of Data Science?",
+    answer: "Problem-oriented",
+    options: ["Problem-oriented", "Data-independent", "Non-predictive", "Non-scalable"]
   },
 
   {
     numb: 77,
-    question: "Every NFA can be converted into:",
-    answer: "An equivalent DFA",
+    question: "Data Science is described as data-driven because:",
+    answer: "Decisions are based on evidence from data",
     options: [
-      "Only a grammar",
-      "An equivalent DFA",
-      "Only a Moore machine",
-      "Nothing"
+      "It avoids data",
+      "Decisions are based on evidence from data",
+      "It uses only intuition",
+      "It never uses statistics"
     ]
   },
 
   {
     numb: 78,
-    question: "The standard method for converting NFA to DFA is:",
-    answer: "Subset construction",
+    question: "A predictive characteristic of Data Science means it can:",
+    answer: "Forecast future outcomes",
     options: [
-      "Table filling",
-      "Subset construction",
-      "Grammar construction",
-      "String reversal"
+      "Only store historical data",
+      "Forecast future outcomes",
+      "Only clean databases",
+      "Only display charts"
     ]
   },
 
+  // ==========================================
+  // MATHEMATICS & STATISTICS
+  // ==========================================
+
   {
     numb: 79,
-    question: "Subset construction is also known as:",
-    answer: "Powerset construction",
+    question: "Probability measures:",
+    answer: "Likelihood of events occurring",
     options: [
-      "State elimination",
-      "Powerset construction",
-      "Grammar construction",
-      "Output construction"
+      "Data storage",
+      "Likelihood of events occurring",
+      "Number of columns",
+      "Database size"
     ]
   },
 
   {
     numb: 80,
-    question: "If an NFA has n states, the equivalent DFA can have at most:",
-    answer: "2^n states",
+    question: "Probability is important in Data Science because it:",
+    answer: "Handles uncertainty",
     options: [
-      "n states",
-      "n² states",
-      "2^n states",
-      "n+2 states"
+      "Removes all data",
+      "Handles uncertainty",
+      "Creates databases",
+      "Only creates charts"
     ]
   },
 
   {
     numb: 81,
-    question: "If an NFA has 3 states, maximum possible DFA states are:",
-    answer: "8",
-    options: ["3", "6", "8", "9"]
+    question: "Statistics is the science of:",
+    answer: "Collecting, summarizing, and interpreting data",
+    options: [
+      "Only programming",
+      "Collecting, summarizing, and interpreting data",
+      "Only storing data",
+      "Only creating websites"
+    ]
   },
 
   {
     numb: 82,
-    question: "If an NFA has 4 states, 2^n gives:",
-    answer: "16",
-    options: ["8", "12", "16", "20"]
+    question: "Which is a measure of central tendency?",
+    answer: "Mean",
+    options: ["Mean", "API", "Database", "Pipeline"]
   },
 
   {
     numb: 83,
-    question: "In subset construction, a DFA state represents:",
-    answer: "A subset of NFA states",
-    options: [
-      "One alphabet symbol",
-      "A subset of NFA states",
-      "Only one final state",
-      "A grammar"
-    ]
+    question: "Which is another measure of central tendency?",
+    answer: "Median",
+    options: ["Median", "SQL", "API", "CSV"]
   },
 
   {
     numb: 84,
-    question: "The DFA obtained from an NFA accepts:",
-    answer: "The same language as the NFA",
-    options: [
-      "A completely different language",
-      "The same language as the NFA",
-      "Only ε",
-      "No language"
-    ]
+    question: "Which is another measure of central tendency?",
+    answer: "Mode",
+    options: ["Mode", "JSON", "ETL", "REST"]
   },
 
   {
     numb: 85,
-    question: "NFA is generally useful because it can:",
-    answer: "Represent multiple possible transitions",
+    question: "Standard deviation is used to describe:",
+    answer: "Variation in data",
     options: [
-      "Remove all states",
-      "Represent multiple possible transitions",
-      "Have no alphabet",
-      "Eliminate final states"
+      "Database structure",
+      "Variation in data",
+      "Data source",
+      "Programming syntax"
     ]
   },
 
-  // =========================
-  // ε-NFA
-  // =========================
-
   {
     numb: 86,
-    question: "An ε-transition occurs:",
-    answer: "Without consuming an input symbol",
+    question: "Descriptive statistics mainly describes:",
+    answer: "Observed data",
     options: [
-      "Only after consuming two symbols",
-      "Without consuming an input symbol",
-      "Only after final state",
-      "Only in DFA"
+      "Only future data",
+      "Observed data",
+      "Only databases",
+      "Only algorithms"
     ]
   },
 
   {
     numb: 87,
-    question: "Which automaton allows ε-transitions?",
-    answer: "ε-NFA",
-    options: ["DFA", "ε-NFA", "Only Moore", "Only grammar"]
+    question: "Which is an example of descriptive statistics?",
+    answer: "Mean",
+    options: ["Mean", "Hypothesis testing", "Confidence interval", "A/B testing"]
   },
 
   {
     numb: 88,
-    question: "ε is used to represent:",
-    answer: "Empty string",
-    options: ["Final state", "Empty string", "Alphabet", "Transition table"]
+    question: "Inferential statistics uses:",
+    answer: "Samples to make conclusions about populations",
+    options: [
+      "Only complete populations",
+      "Samples to make conclusions about populations",
+      "Only databases",
+      "Only visualizations"
+    ]
   },
 
   {
     numb: 89,
-    question: "ε-closure of a state contains:",
-    answer: "States reachable using zero or more ε-transitions",
+    question: "Which is an example of inferential statistics?",
+    answer: "Hypothesis testing",
     options: [
-      "Only final states",
-      "States reachable using zero or more ε-transitions",
-      "Only unreachable states",
-      "Only the initial state"
+      "Mean",
+      "Median",
+      "Hypothesis testing",
+      "Histogram"
     ]
   },
 
   {
     numb: 90,
-    question: "The ε-closure of a state always contains:",
-    answer: "The state itself",
+    question: "A/B testing is associated with:",
+    answer: "Inferential statistics",
     options: [
-      "Only final states",
-      "The state itself",
-      "Only unreachable states",
-      "No state"
+      "Inferential statistics",
+      "Data storage",
+      "Data acquisition",
+      "Data representation"
     ]
   },
 
   {
     numb: 91,
-    question: "ε-transitions consume:",
-    answer: "No input symbol",
+    question: "Linear algebra is heavily based on:",
+    answer: "Vectors and matrices",
     options: [
-      "One input symbol",
-      "Two input symbols",
-      "No input symbol",
-      "All input symbols"
+      "Web pages",
+      "Vectors and matrices",
+      "HTML tags",
+      "SQL queries"
     ]
   },
 
   {
     numb: 92,
-    question: "An ε-NFA can be converted to:",
-    answer: "An equivalent NFA",
+    question: "Images can be represented as:",
+    answer: "Matrices of pixel values",
     options: [
-      "Only a grammar",
-      "An equivalent NFA",
-      "Only a Moore machine",
-      "No other machine"
+      "Only strings",
+      "Matrices of pixel values",
+      "Only SQL tables",
+      "Only graphs"
     ]
   },
 
   {
     numb: 93,
-    question: "After removing ε-transitions, the resulting NFA can be converted to:",
-    answer: "DFA",
-    options: [
-      "DFA",
-      "Only grammar",
-      "Only Mealy machine",
-      "Nothing"
-    ]
+    question: "Calculus is used in machine learning for:",
+    answer: "Optimization",
+    options: ["Only data storage", "Optimization", "Only web scraping", "Only reporting"]
   },
 
   {
     numb: 94,
-    question: "The purpose of ε-closure is to identify states reachable through:",
-    answer: "ε-transitions",
-    options: [
-      "Only input 0",
-      "Only input 1",
-      "ε-transitions",
-      "Final states"
-    ]
+    question: "Gradient Descent is related to:",
+    answer: "Optimization",
+    options: ["Optimization", "Data collection", "Data storage", "Data cleaning only"]
   },
 
   {
     numb: 95,
-    question: "ε-NFA has greater computational power than DFA.",
-    answer: "False",
-    options: ["True", "False", "Only sometimes", "Cannot be determined"]
+    question: "Optimization aims to:",
+    answer: "Find the best solution among many possibilities",
+    options: [
+      "Delete all data",
+      "Find the best solution among many possibilities",
+      "Only collect data",
+      "Only visualize data"
+    ]
   },
+
+  // ==========================================
+  // COMPUTER SCIENCE & AI
+  // ==========================================
 
   {
     numb: 96,
-    question: "An ε-NFA and DFA can recognize:",
-    answer: "The same class of languages",
-    options: [
-      "Completely different classes",
-      "The same class of languages",
-      "Only finite strings",
-      "Only empty strings"
-    ]
+    question: "Which programming language is commonly used in Data Science?",
+    answer: "Python",
+    options: ["Python", "HTML", "CSS", "XML"]
   },
-
-  // =========================
-  // DFA MINIMIZATION
-  // =========================
 
   {
     numb: 97,
-    question: "DFA minimization is used to:",
-    answer: "Reduce the number of states",
-    options: [
-      "Increase the alphabet",
-      "Reduce the number of states",
-      "Remove all transitions",
-      "Create a grammar"
-    ]
+    question: "Which language is commonly used for querying databases?",
+    answer: "SQL",
+    options: ["SQL", "HTML", "CSS", "XML"]
   },
 
   {
     numb: 98,
-    question: "Two states are equivalent if:",
-    answer: "They cannot be distinguished by any input string",
-    options: [
-      "They have different names",
-      "They cannot be distinguished by any input string",
-      "They are both initial",
-      "They have different alphabets"
-    ]
+    question: "Which is a NoSQL database?",
+    answer: "MongoDB",
+    options: ["MySQL", "PostgreSQL", "MongoDB", "SQL Server"]
   },
 
   {
     numb: 99,
-    question: "Before minimization, unreachable states should be:",
-    answer: "Removed",
-    options: [
-      "Duplicated",
-      "Removed",
-      "Made final",
-      "Made initial"
-    ]
+    question: "Which is a relational database?",
+    answer: "MySQL",
+    options: ["MongoDB", "MySQL", "Redis", "Cassandra"]
   },
 
   {
     numb: 100,
-    question: "The table-filling method is used for:",
-    answer: "DFA minimization",
-    options: [
-      "NFA creation",
-      "DFA minimization",
-      "Grammar generation",
-      "String concatenation"
-    ]
+    question: "Machine Learning automatically learns patterns from:",
+    answer: "Data",
+    options: ["Only code", "Data", "Only hardware", "Only databases"]
   },
 
   {
     numb: 101,
-    question: "In DFA minimization, states are initially divided into:",
-    answer: "Final and non-final states",
-    options: [
-      "Initial and final only",
-      "Final and non-final states",
-      "Odd and even states",
-      "Input and output states"
-    ]
+    question: "Supervised learning uses:",
+    answer: "Labeled data",
+    options: ["Unlabeled data only", "Labeled data", "No data", "Only images"]
   },
 
   {
     numb: 102,
-    question: "The partitioning process in DFA minimization is:",
-    answer: "Repeated until no further refinement is possible",
-    options: [
-      "Performed only once",
-      "Repeated until no further refinement is possible",
-      "Never repeated",
-      "Done only for NFA"
-    ]
+    question: "Which is an example of supervised learning?",
+    answer: "Spam detection",
+    options: ["Spam detection", "Customer segmentation", "PCA", "Clustering"]
   },
 
   {
     numb: 103,
-    question: "Equivalent states can be:",
-    answer: "Merged",
-    options: [
-      "Deleted individually without replacement",
-      "Merged",
-      "Converted into symbols",
-      "Converted into grammars"
-    ]
+    question: "Which algorithm is associated with supervised learning?",
+    answer: "Linear Regression",
+    options: ["K-Means", "Linear Regression", "PCA", "Hierarchical clustering"]
   },
 
   {
     numb: 104,
-    question: "The minimized DFA has:",
-    answer: "The smallest number of equivalent states",
+    question: "Unsupervised learning is used to:",
+    answer: "Find hidden patterns",
     options: [
-      "Maximum states",
-      "The smallest number of equivalent states",
-      "No final states",
-      "No transitions"
+      "Find hidden patterns",
+      "Only use labeled data",
+      "Only calculate averages",
+      "Only store data"
     ]
   },
 
   {
     numb: 105,
-    question: "A minimized DFA recognizes:",
-    answer: "The same language as the original DFA",
+    question: "Customer segmentation is an example of:",
+    answer: "Unsupervised learning",
     options: [
-      "A different language",
-      "The same language as the original DFA",
-      "Only ε",
-      "No language"
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Data cleaning"
     ]
   },
 
   {
     numb: 106,
-    question: "The minimized DFA is unique up to:",
-    answer: "Renaming of states",
-    options: [
-      "Changing the alphabet",
-      "Renaming of states",
-      "Changing the language",
-      "Changing all transitions"
-    ]
+    question: "Which algorithm is associated with unsupervised learning?",
+    answer: "K-Means",
+    options: ["Linear Regression", "K-Means", "Decision Tree", "Random Forest"]
   },
 
   {
     numb: 107,
-    question: "Myhill–Nerode method is associated with:",
-    answer: "State equivalence and minimization",
+    question: "Reinforcement learning learns through:",
+    answer: "Rewards and penalties",
     options: [
-      "String concatenation",
-      "State equivalence and minimization",
-      "Grammar creation",
-      "ε-transition creation"
+      "Labels only",
+      "Rewards and penalties",
+      "Database tables",
+      "Missing values"
     ]
   },
 
   {
     numb: 108,
-    question: "In table-filling minimization, distinguishable states are:",
-    answer: "Marked",
-    options: ["Merged", "Marked", "Deleted immediately", "Ignored"]
+    question: "Which is an application of reinforcement learning?",
+    answer: "Game-playing AI",
+    options: ["Game-playing AI", "CSV cleaning", "Data entry", "SQL storage"]
   },
 
   {
     numb: 109,
-    question: "If two states are distinguishable, they:",
-    answer: "Cannot be merged",
-    options: [
-      "Must be merged",
-      "Cannot be merged",
-      "Must become initial",
-      "Must become final"
-    ]
+    question: "Machine Learning is a subset of:",
+    answer: "Artificial Intelligence",
+    options: ["Statistics", "Artificial Intelligence", "Databases", "Data Cleaning"]
   },
 
   {
     numb: 110,
-    question: "The main objective of DFA minimization is:",
-    answer: "Obtain an equivalent DFA with minimum states",
-    options: [
-      "Create more states",
-      "Obtain an equivalent DFA with minimum states",
-      "Remove the alphabet",
-      "Remove the language"
-    ]
+    question: "Which is an example of Artificial Intelligence?",
+    answer: "Speech recognition",
+    options: ["Speech recognition", "CSV file", "SQL table", "DataFrame"]
   },
 
-  // =========================
-  // MEALY MACHINE
-  // =========================
+  // ==========================================
+  // DATA ACQUISITION - CSV
+  // ==========================================
 
   {
     numb: 111,
-    question: "A Mealy machine produces output based on:",
-    answer: "Current state and current input",
-    options: [
-      "Current state only",
-      "Current state and current input",
-      "Final state only",
-      "Alphabet size only"
-    ]
+    question: "Which Pandas function reads a CSV file?",
+    answer: "pd.read_csv()",
+    options: ["pd.read_csv()", "pd.open_csv()", "pd.csv_read()", "pd.load_csv()"]
   },
 
   {
     numb: 112,
-    question: "The output of a Mealy machine is associated with:",
-    answer: "Transitions",
+    question: "A Pandas DataFrame is commonly used to:",
+    answer: "Represent tabular data",
     options: [
-      "States only",
-      "Transitions",
-      "Alphabet only",
-      "Initial state only"
+      "Represent tabular data",
+      "Run operating systems",
+      "Compile programs",
+      "Create network connections"
     ]
   },
 
   {
     numb: 113,
-    question: "Mealy machine output depends on:",
-    answer: "State and input",
-    options: [
-      "Only state",
-      "Only input",
-      "State and input",
-      "Only final state"
-    ]
+    question: "Which function displays the first records of a DataFrame?",
+    answer: "df.head()",
+    options: ["df.first()", "df.head()", "df.start()", "df.top()"]
   },
 
   {
     numb: 114,
-    question: "In a Mealy machine, output can change when:",
-    answer: "Input changes",
-    options: [
-      "Only state is deleted",
-      "Input changes",
-      "Alphabet is removed",
-      "Grammar changes"
-    ]
+    question: "Which attribute gives DataFrame dimensions?",
+    answer: "df.shape",
+    options: ["df.size()", "df.shape", "df.dimension()", "df.length()"]
   },
 
   {
     numb: 115,
-    question: "Which machine associates output with transitions?",
-    answer: "Mealy machine",
-    options: [
-      "Moore machine",
-      "Mealy machine",
-      "DFA",
-      "NFA"
-    ]
+    question: "Which property displays column names?",
+    answer: "df.columns",
+    options: ["df.names", "df.columns", "df.fields", "df.headers()"]
   },
 
   {
     numb: 116,
-    question: "A Mealy machine can produce output on:",
-    answer: "Transitions",
-    options: [
-      "Only states",
-      "Transitions",
-      "Only final states",
-      "Only initial state"
-    ]
+    question: "Which property displays data types?",
+    answer: "df.dtypes",
+    options: ["df.types", "df.dtypes", "df.datatypes()", "df.kind"]
   },
 
   {
     numb: 117,
-    question: "The output sequence of a Mealy machine generally has length:",
-    answer: "Equal to the input sequence",
+    question: "Which function helps identify missing values?",
+    answer: "df.isnull().sum()",
     options: [
-      "Always zero",
-      "Equal to the input sequence",
-      "One more than input always",
-      "Twice the input always"
+      "df.missing()",
+      "df.isnull().sum()",
+      "df.empty()",
+      "df.nulls()"
     ]
   },
 
-  // =========================
-  // MOORE MACHINE
-  // =========================
-
   {
     numb: 118,
-    question: "A Moore machine produces output based on:",
-    answer: "Current state",
-    options: [
-      "Current input only",
-      "Current state",
-      "Previous grammar",
-      "Alphabet size"
-    ]
+    question: "Which parameter allows reading only selected CSV columns?",
+    answer: "usecols",
+    options: ["columns", "usecols", "selectcols", "fields"]
   },
 
   {
     numb: 119,
-    question: "The output of a Moore machine is associated with:",
-    answer: "States",
-    options: [
-      "Transitions",
-      "States",
-      "Input symbols only",
-      "Production rules"
-    ]
+    question: "Which parameter specifies a separator in read_csv()?",
+    answer: "sep",
+    options: ["separator", "sep", "split", "delimiterOnly"]
   },
 
   {
     numb: 120,
-    question: "Which machine associates output with states?",
-    answer: "Moore machine",
+    question: "Which parameter can convert CSV date columns into datetime?",
+    answer: "parse_dates",
+    options: ["date", "parse_dates", "datetime_only", "convert_date"]
+  },
+
+  {
+    numb: 121,
+    question: "Which parameter is useful when a CSV has no header row?",
+    answer: "header=None",
+    options: ["header=None", "noheader=True", "header=FalseOnly", "columns=None"]
+  },
+
+  {
+    numb: 122,
+    question: "How can a very large CSV be read in smaller portions?",
+    answer: "Using chunksize",
+    options: ["Using rowsize", "Using chunksize", "Using pagesize", "Using splitfile"]
+  },
+
+  {
+    numb: 123,
+    question: "The built-in Python module for basic CSV processing is:",
+    answer: "csv",
+    options: ["csv", "pandasCSV", "dataframe", "table"]
+  },
+
+  {
+    numb: 124,
+    question: "For Data Science applications, which approach is generally preferred for CSV analysis?",
+    answer: "Pandas",
+    options: ["Pandas", "Only csv module", "Only text editor", "Only Excel"]
+  },
+
+  // ==========================================
+  // JSON ACQUISITION
+  // ==========================================
+
+  {
+    numb: 125,
+    question: "Which Pandas function reads JSON data?",
+    answer: "pd.read_json()",
+    options: ["pd.read_json()", "pd.open_json()", "pd.json_read()", "pd.load_json()"]
+  },
+
+  {
+    numb: 126,
+    question: "Which Python function can read JSON from a file?",
+    answer: "json.load()",
+    options: ["json.load()", "json.read()", "json.file()", "json.open()"]
+  },
+
+  {
+    numb: 127,
+    question: "Which method converts an API response into JSON/Python data?",
+    answer: "response.json()",
     options: [
-      "Mealy machine",
-      "Moore machine",
-      "DFA",
-      "NFA"
+      "response.json()",
+      "response.data()",
+      "response.parse()",
+      "response.load()"
     ]
+  },
+
+  {
+    numb: 128,
+    question: "Which function converts structured data into a DataFrame?",
+    answer: "pd.DataFrame()",
+    options: [
+      "pd.DataFrame()",
+      "pd.CreateTable()",
+      "pd.Structure()",
+      "pd.Table()"
+    ]
+  },
+
+  {
+    numb: 129,
+    question: "Which function is useful for flattening nested JSON?",
+    answer: "pd.json_normalize()",
+    options: [
+      "pd.json_normalize()",
+      "pd.flatten()",
+      "pd.json_flat()",
+      "pd.normalize_json()"
+    ]
+  },
+
+  // ==========================================
+  // DATA CLEANING & NOISE
+  // ==========================================
+
+  {
+    numb: 130,
+    question: "Noise in data refers to:",
+    answer: "Random errors, irrelevant information, or meaningless variations",
+    options: [
+      "Useful information only",
+      "Random errors, irrelevant information, or meaningless variations",
+      "Only duplicate records",
+      "Only missing values"
+    ]
+  },
+
+  {
+    numb: 131,
+    question: "Noise can reduce:",
+    answer: "Data quality",
+    options: ["Data quality", "Data storage only", "CPU speed", "Internet speed"]
+  },
+
+  {
+    numb: 132,
+    question: "In Y = X + ε, ε represents:",
+    answer: "Noise",
+    options: ["True signal", "Noise", "Input alphabet", "Output"]
+  },
+
+  {
+    numb: 133,
+    question: "Which can be an example of noise?",
+    answer: "Incorrect sensor reading",
+    options: [
+      "Correct measurement",
+      "Incorrect sensor reading",
+      "Valid observation",
+      "Correct record"
+    ]
+  },
+
+  {
+    numb: 134,
+    question: "Which technique can smooth numerical data?",
+    answer: "Binning",
+    options: ["Binning", "Joining", "Sorting only", "Indexing"]
+  },
+
+  {
+    numb: 135,
+    question: "Which technique can smooth time-series data?",
+    answer: "Moving average",
+    options: ["Moving average", "SQL join", "CSV parsing", "Encoding"]
+  },
+
+  {
+    numb: 136,
+    question: "Which technique is commonly used to identify extreme values?",
+    answer: "Outlier detection",
+    options: ["Outlier detection", "Data storage", "Data acquisition", "Encoding"]
+  },
+
+  {
+    numb: 137,
+    question: "Which method removes repeated records?",
+    answer: "Duplicate removal",
+    options: ["Duplicate removal", "Normalization", "Aggregation", "Visualization"]
+  },
+
+  {
+    numb: 138,
+    question: "Which technique fills missing values?",
+    answer: "Missing-value imputation",
+    options: [
+      "Missing-value imputation",
+      "Data integration",
+      "Sorting",
+      "Visualization"
+    ]
+  },
+
+  {
+    numb: 139,
+    question: "Which Pandas function removes duplicate records?",
+    answer: "drop_duplicates()",
+    options: ["remove_duplicates()", "drop_duplicates()", "delete_duplicates()", "unique_remove()"]
+  },
+
+  {
+    numb: 140,
+    question: "Which Pandas function can replace missing values?",
+    answer: "fillna()",
+    options: ["replaceNull()", "fillna()", "missing()", "fillNullOnly()"]
+  },
+
+  // ==========================================
+  // DATA TRANSFORMATION
+  // ==========================================
+
+  {
+    numb: 141,
+    question: "Data transformation converts data into:",
+    answer: "A more useful form for analysis",
+    options: [
+      "A completely unusable form",
+      "A more useful form for analysis",
+      "Only binary code",
+      "Only images"
+    ]
+  },
+
+  {
+    numb: 142,
+    question: "Normalization commonly rescales values to:",
+    answer: "A range such as 0 to 1",
+    options: [
+      "Only -100 to 100",
+      "A range such as 0 to 1",
+      "Only 1 to 10",
+      "Only 10 to 100"
+    ]
+  },
+
+  {
+    numb: 143,
+    question: "Which technique converts data to a common scale using mean and standard deviation?",
+    answer: "Standardization",
+    options: ["Normalization", "Standardization", "Aggregation", "Filtering"]
+  },
+
+  {
+    numb: 144,
+    question: "The Z-score is associated with:",
+    answer: "Standardization",
+    options: ["Aggregation", "Standardization", "Binning", "Encoding"]
+  },
+
+  {
+    numb: 145,
+    question: "Aggregation means:",
+    answer: "Combining multiple records into a summary",
+    options: [
+      "Deleting all records",
+      "Combining multiple records into a summary",
+      "Adding random noise",
+      "Changing data to images"
+    ]
+  },
+
+  {
+    numb: 146,
+    question: "Discretization converts:",
+    answer: "Continuous data into categories",
+    options: [
+      "Categories into databases",
+      "Continuous data into categories",
+      "Text into audio",
+      "Images into videos"
+    ]
+  },
+
+  {
+    numb: 147,
+    question: "Encoding converts:",
+    answer: "Categorical data into numerical representation",
+    options: [
+      "Numerical data into images",
+      "Categorical data into numerical representation",
+      "Data into websites",
+      "Tables into databases"
+    ]
+  },
+
+  {
+    numb: 148,
+    question: "Log transformation can help reduce:",
+    answer: "Skewness",
+    options: ["Database size", "Skewness", "Number of columns", "Number of records"]
+  },
+
+  {
+    numb: 149,
+    question: "In time-series analysis, differencing can be used to:",
+    answer: "Remove trends",
+    options: ["Remove trends", "Add duplicates", "Create JSON", "Remove columns"]
+  },
+
+  {
+    numb: 150,
+    question: "Smoothing in time-series analysis is used to:",
+    answer: "Reduce noise",
+    options: ["Increase noise", "Reduce noise", "Create databases", "Add categories"]
   }
 
 ];

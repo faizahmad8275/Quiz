@@ -466,22 +466,22 @@ body {
 
 
   /* Timer */
-  body .quiz-box .quiz-header-section .quiz-titlecontainer .timelineContainer {
-    width: 110px;
-    height: 38px;
-    padding: 0 6px;
-  }
+body .quiz-box .quiz-header-section .quiz-titlecontainer .timelineContainer {
+  width: 100px;
+  height: 35px;
+  padding: 0 5px;
+}
 
-  body .quiz-box .quiz-header-section .quiz-titlecontainer .timelineTiltle {
-    font-size: 13px;
-  }
+body .quiz-box .quiz-header-section .quiz-titlecontainer .timelineTiltle {
+  font-size: 11px;
+}
 
-  body .quiz-box .quiz-header-section .quiz-titlecontainer .timeline {
-    width: 38px;
-    height: 27px;
-    line-height: 27px;
-    font-size: 15px;
-  }
+body .quiz-box .quiz-header-section .quiz-titlecontainer .timeline {
+  width: 32px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+}
 
 
   /* Question */

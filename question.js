@@ -1,1323 +1,902 @@
 let questions = [
-
-  // =========================
-  // ALPHABETS, STRINGS & LANGUAGES
-  // =========================
-
   {
     numb: 1,
-    question: "In Theory of Computation, what is an alphabet?",
-    answer: "A finite non-empty set of symbols",
+    question: "What does learning mean in Artificial Intelligence?",
+    answer: "A system improving its performance using experience",
     options: [
-      "A finite non-empty set of symbols",
-      "An infinite set of states",
-      "A collection of machines",
-      "A set of grammars"
-    ]
+      "Writing more code manually",
+      "A system improving its performance using experience",
+      "Increasing computer memory",
+      "Increasing processor speed",
+    ],
   },
-
   {
     numb: 2,
-    question: "Which symbol is commonly used to represent an alphabet?",
-    answer: "Σ",
-    options: ["Q", "Σ", "F", "δ"]
+    question: "A learning system can improve its performance based on:",
+    answer: "All of the above",
+    options: ["Experience", "Examples", "Feedback", "All of the above"],
   },
-
   {
     numb: 3,
-    question: "Which of the following can be an alphabet?",
-    answer: "{0,1}",
+    question: "Why is learning necessary in AI?",
+    answer: "All of the above",
     options: [
-      "{0,1}",
-      "{0,1,2,...} only",
-      "All real numbers",
-      "All English sentences"
-    ]
+      "Designers cannot anticipate every situation",
+      "Environments may change over time",
+      "Learning can discover useful patterns",
+      "All of the above",
+    ],
   },
-
   {
     numb: 4,
-    question: "A string is a finite sequence of:",
-    answer: "Symbols from an alphabet",
-    options: [
-      "States",
-      "Symbols from an alphabet",
-      "Grammars",
-      "Machines"
-    ]
+    question:
+      "Which ability allows an AI system to handle previously unseen situations?",
+    answer: "Generalization",
+    options: ["Memorization", "Generalization", "Compilation", "Encryption"],
   },
-
   {
     numb: 5,
-    question: "What is the length of a string?",
-    answer: "Number of symbols in the string",
+    question:
+      "Which is the simplest form of learning mentioned in the tutorial?",
+    answer: "Rote learning",
     options: [
-      "Number of states",
-      "Number of symbols in the string",
-      "Number of languages",
-      "Number of transitions"
-    ]
+      "Neural learning",
+      "Genetic learning",
+      "Rote learning",
+      "Inductive learning",
+    ],
   },
-
   {
     numb: 6,
-    question: "What is the length of the empty string ε?",
-    answer: "0",
-    options: ["0", "1", "-1", "Undefined"]
+    question: "Rote learning primarily involves:",
+    answer: "Memorizing facts or results",
+    options: [
+      "Finding statistical patterns",
+      "Memorizing facts or results",
+      "Evolving solutions",
+      "Adjusting neural weights",
+    ],
   },
-
   {
     numb: 7,
-    question: "Which symbol represents the empty string?",
-    answer: "ε",
-    options: ["Σ", "ε", "δ", "λ"]
+    question: "Which statement about rote learning is TRUE?",
+    answer: "It stores information for direct lookup",
+    options: [
+      "It always generalizes to new situations",
+      "It involves extensive reasoning",
+      "It stores information for direct lookup",
+      "It requires neural networks",
+    ],
   },
-
   {
     numb: 8,
-    question: "Σ* represents:",
-    answer: "All finite strings over Σ including ε",
-    options: [
-      "Only strings of length 1",
-      "All finite strings over Σ including ε",
-      "Only non-empty strings",
-      "Only alphabet symbols"
-    ]
+    question:
+      "A chess program stores the best move for a board position so that it does not calculate it again. This is an example of:",
+    answer: "Rote learning",
+    options: ["Inductive learning", "Rote learning", "Genetic learning", "EBL"],
   },
-
   {
     numb: 9,
-    question: "Σ+ represents:",
-    answer: "All non-empty strings over Σ",
+    question: "Learning by Taking Advice involves:",
+    answer: "Receiving rules or advice from a teacher/expert",
     options: [
-      "Only ε",
-      "All finite strings including ε",
-      "All non-empty strings over Σ",
-      "Only strings of length 1"
-    ]
+      "Receiving rules or advice from a teacher/expert",
+      "Randomly changing solutions",
+      "Adjusting neural network weights",
+      "Finding entropy",
+    ],
   },
-
   {
     numb: 10,
-    question: "What is the difference between Σ* and Σ+?",
-    answer: "Σ* contains ε, while Σ+ does not",
+    question:
+      "In Learning by Taking Advice, most of the thinking has already been done by:",
+    answer: "The teacher/expert",
     options: [
-      "Σ+ contains ε, while Σ* does not",
-      "Σ* contains ε, while Σ+ does not",
-      "There is no difference",
-      "Both contain only ε"
-    ]
+      "The computer",
+      "The learner",
+      "The teacher/expert",
+      "The operating system",
+    ],
   },
-
   {
     numb: 11,
-    question: "If Σ = {0,1}, which is a string over Σ?",
-    answer: "0101",
-    options: ["012", "0101", "abc", "2ab"]
+    question: "Learning from Examples is also called:",
+    answer: "Induction",
+    options: ["Deduction", "Induction", "Mutation", "Selection"],
   },
-
   {
     numb: 12,
-    question: "If w = 10101, what is |w|?",
-    answer: "5",
-    options: ["3", "4", "5", "6"]
+    question: "Learning from Examples attempts to:",
+    answer: "Find the pattern behind examples",
+    options: [
+      "Memorize every example exactly",
+      "Find the pattern behind examples",
+      "Remove all examples",
+      "Generate random rules",
+    ],
   },
-
   {
     numb: 13,
-    question: "Which of the following is NOT a string over Σ = {a,b}?",
-    answer: "abc",
-    options: ["aab", "abba", "bbb", "abc"]
+    question:
+      "Which form of learning generally requires only one example along with background knowledge?",
+    answer: "Explanation-Based Learning",
+    options: [
+      "Rote learning",
+      "Inductive learning",
+      "Explanation-Based Learning",
+      "Genetic learning",
+    ],
   },
-
   {
     numb: 14,
-    question: "Concatenation of two strings means:",
-    answer: "Joining one string after another",
+    question: "Neural Net Learning is inspired by:",
+    answer: "Human brain structure",
     options: [
-      "Deleting both strings",
-      "Joining one string after another",
-      "Reversing both strings",
-      "Sorting symbols"
-    ]
+      "Natural selection",
+      "Human brain structure",
+      "Database systems",
+      "Mathematical logic only",
+    ],
   },
-
   {
     numb: 15,
-    question: "If x = ab and y = cd, then xy is:",
-    answer: "abcd",
-    options: ["cdab", "abcd", "acbd", "badc"]
+    question: "Genetic Learning is inspired by:",
+    answer: "Natural evolution",
+    options: [
+      "Human memory",
+      "Natural evolution",
+      "Decision trees",
+      "Database normalization",
+    ],
   },
-
   {
     numb: 16,
-    question: "If x = ab and y = cd, then yx is:",
-    answer: "cdab",
-    options: ["abcd", "cdab", "acbd", "dcba"]
+    question: "Inductive learning moves from:",
+    answer: "Specific → general",
+    options: [
+      "General → specific",
+      "Specific → general",
+      "General → general",
+      "Specific → specific",
+    ],
   },
-
   {
     numb: 17,
-    question: "The reverse of the string abc is:",
-    answer: "cba",
-    options: ["abc", "bac", "cba", "acb"]
+    question: "Deductive reasoning moves from:",
+    answer: "General rules to specific conclusions",
+    options: [
+      "Specific observations to general conclusions",
+      "General rules to specific conclusions",
+      "Random examples to rules",
+      "Examples to mutations",
+    ],
   },
-
   {
     numb: 18,
-    question: "The reverse of ε is:",
-    answer: "ε",
-    options: ["0", "1", "ε", "Undefined"]
+    question: "In inductive learning, the learner is given:",
+    answer: "Training examples",
+    options: [
+      "Training examples",
+      "Only random numbers",
+      "Only an algorithm",
+      "Only a neural network",
+    ],
   },
-
   {
     numb: 19,
-    question: "A substring of a string is:",
-    answer: "A consecutive part of the string",
+    question: "A training example generally contains:",
+    answer: "Features/attributes and a correct label",
     options: [
-      "A non-consecutive part only",
-      "A consecutive part of the string",
-      "Always the entire string",
-      "Always one symbol"
-    ]
+      "Features/attributes and a correct label",
+      "Only a label",
+      "Only an attribute",
+      "Only an algorithm",
+    ],
   },
-
   {
     numb: 20,
-    question: "A prefix of a string must occur:",
-    answer: "At the beginning of the string",
-    options: [
-      "At the end",
-      "At the beginning of the string",
-      "Only in the middle",
-      "Outside the string"
-    ]
+    question: "The general rule produced by inductive learning is called a:",
+    answer: "Hypothesis",
+    options: ["Mutation", "Hypothesis", "Chromosome", "Neuron"],
   },
-
   {
     numb: 21,
-    question: "A suffix of a string must occur:",
-    answer: "At the end of the string",
+    question:
+      "The set of all possible rules that could be constructed from given attributes is called:",
+    answer: "Hypothesis space",
     options: [
-      "At the beginning",
-      "At the end of the string",
-      "Only in the middle",
-      "Anywhere outside the string"
-    ]
+      "Search tree",
+      "Hypothesis space",
+      "Neural space",
+      "Fitness space",
+    ],
   },
-
   {
     numb: 22,
-    question: "A language over an alphabet is:",
-    answer: "A set of strings over the alphabet",
+    question: "What is inductive bias?",
+    answer: "A built-in preference for choosing one hypothesis over another",
     options: [
-      "A set of states",
-      "A set of strings over the alphabet",
-      "A set of transitions",
-      "A grammar only"
-    ]
+      "Random selection of training examples",
+      "A built-in preference for choosing one hypothesis over another",
+      "A method of calculating neural weights",
+      "A mutation operation",
+    ],
   },
-
   {
     numb: 23,
-    question: "Which of the following can be a language over {0,1}?",
-    answer: "{0, 01, 101}",
+    question: "Occam's Razor generally prefers:",
+    answer: "The simplest possible rule",
     options: [
-      "{0, 01, 101}",
-      "{a,b,c}",
-      "{2,3,4}",
-      "{x,y,z}"
-    ]
+      "The most complicated rule",
+      "The simplest possible rule",
+      "A random rule",
+      "The longest rule",
+    ],
   },
-
   {
     numb: 24,
-    question: "Can the empty string ε belong to a language?",
-    answer: "Yes",
-    options: ["Yes", "No", "Only in DFA", "Only in NFA"]
+    question: "Which statement about inductive conclusions is correct?",
+    answer: "They are not guaranteed and depend on the examples",
+    options: [
+      "They are always 100% guaranteed",
+      "They are never useful",
+      "They are not guaranteed and depend on the examples",
+      "They require genetic algorithms",
+    ],
   },
-
   {
     numb: 25,
-    question: "Which operation combines two strings in sequence?",
-    answer: "Concatenation",
+    question:
+      "A spam filter learning from emails labeled spam and not spam is an example of:",
+    answer: "Inductive learning",
     options: [
-      "Union",
-      "Concatenation",
-      "Intersection",
-      "Complement"
-    ]
+      "Inductive learning",
+      "Rote learning only",
+      "Mutation",
+      "Crossover",
+    ],
   },
-
-  // =========================
-  // GRAMMARS
-  // =========================
-
   {
     numb: 26,
-    question: "A grammar is formally represented by:",
-    answer: "G = (N, T, P, S)",
-    options: [
-      "G = (Q, Σ, δ, F)",
-      "G = (N, T, P, S)",
-      "G = (Q, T, P, F)",
-      "G = (N, Σ, δ, S)"
-    ]
+    question: "A decision tree resembles a:",
+    answer: "Flowchart",
+    options: ["Database", "Flowchart", "Neural network", "Genetic chromosome"],
   },
-
   {
     numb: 27,
-    question: "In G = (N,T,P,S), N represents:",
-    answer: "Non-terminals",
+    question: "In a decision tree, an internal node represents:",
+    answer: "An attribute test",
     options: [
-      "Terminals",
-      "Non-terminals",
-      "Productions",
-      "Start states"
-    ]
+      "Final classification",
+      "An attribute test",
+      "A mutation",
+      "A fitness value",
+    ],
   },
-
   {
     numb: 28,
-    question: "In a grammar, T represents:",
-    answer: "Terminals",
+    question: "In a decision tree, branches represent:",
+    answer: "Outcomes of attribute tests",
     options: [
-      "Terminals",
-      "Non-terminals",
-      "Transitions",
-      "States"
-    ]
+      "Outcomes of attribute tests",
+      "Neural weights",
+      "Training errors",
+      "Population size",
+    ],
   },
-
   {
     numb: 29,
-    question: "In a grammar, P represents:",
-    answer: "Production rules",
+    question: "In a decision tree, a leaf represents:",
+    answer: "A final decision/classification",
     options: [
-      "States",
-      "Production rules",
-      "Final states",
-      "Input symbols"
-    ]
+      "An attribute",
+      "A final decision/classification",
+      "A training example only",
+      "An input layer",
+    ],
   },
-
   {
     numb: 30,
-    question: "In a grammar, S represents:",
-    answer: "Start symbol",
-    options: [
-      "Final state",
-      "Start symbol",
-      "Terminal symbol",
-      "Transition function"
-    ]
+    question:
+      "Which algorithm is specifically mentioned for building decision trees?",
+    answer: "ID3",
+    options: ["BFS", "DFS", "ID3", "Dijkstra"],
   },
-
   {
     numb: 31,
-    question: "Which component of a grammar contains production rules?",
-    answer: "P",
-    options: ["N", "T", "P", "S"]
+    question: "ID3 builds a decision tree:",
+    answer: "Top-down",
+    options: ["Bottom-up", "Top-down", "Randomly", "Horizontally"],
   },
-
   {
     numb: 32,
-    question: "Which component represents the set of non-terminals?",
-    answer: "N",
-    options: ["N", "T", "P", "S"]
+    question: "Entropy measures:",
+    answer: "Uncertainty or impurity",
+    options: [
+      "Number of attributes",
+      "Uncertainty or impurity",
+      "Number of neurons",
+      "Population size",
+    ],
   },
-
   {
     numb: 33,
-    question: "Which component represents the set of terminals?",
-    answer: "T",
-    options: ["N", "T", "P", "S"]
+    question: "If all examples in a group have the same label, entropy is:",
+    answer: "Zero",
+    options: ["Maximum", "Zero", "One", "Infinite"],
   },
-
   {
     numb: 34,
-    question: "Which component represents the starting point of grammar derivation?",
-    answer: "S",
-    options: ["N", "T", "P", "S"]
+    question: "For a 50-50 mixture of two labels, entropy is:",
+    answer: "At its highest",
+    options: ["Zero", "At its highest", "Negative", "Undefined"],
   },
-
-  // =========================
-  // CHOMSKY HIERARCHY
-  // =========================
-
   {
     numb: 35,
-    question: "How many major types are included in the Chomsky hierarchy?",
-    answer: "Four",
-    options: ["Two", "Three", "Four", "Five"]
+    question: "Information Gain measures:",
+    answer: "How much an attribute reduces uncertainty",
+    options: [
+      "How much an attribute reduces uncertainty",
+      "Number of neurons",
+      "Number of mutations",
+      "Size of the training dataset",
+    ],
   },
-
   {
     numb: 36,
-    question: "Type 0 grammar is known as:",
-    answer: "Unrestricted grammar",
+    question: "ID3 chooses the attribute having:",
+    answer: "Highest information gain",
     options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
-    ]
+      "Lowest information gain",
+      "Highest information gain",
+      "Lowest entropy always",
+      "Maximum number of values",
+    ],
   },
-
   {
     numb: 37,
-    question: "Type 1 grammar is known as:",
-    answer: "Context-sensitive grammar",
+    question: "A major advantage of decision trees is:",
+    answer: "They are easy for humans to understand",
     options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
-    ]
+      "They are difficult to interpret",
+      "They are easy for humans to understand",
+      "They require huge computing power",
+      "They cannot classify data",
+    ],
   },
-
   {
     numb: 38,
-    question: "Type 2 grammar is known as:",
-    answer: "Context-free grammar",
+    question: "A major limitation of decision trees is:",
+    answer: "They can overfit the training data",
     options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
-    ]
+      "They cannot represent decisions",
+      "They can overfit the training data",
+      "They cannot use attributes",
+      "They cannot be used for classification",
+    ],
   },
-
   {
     numb: 39,
-    question: "Type 3 grammar is known as:",
-    answer: "Regular grammar",
-    options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
-    ]
+    question:
+      "The process of removing branches that provide little predictive value is called:",
+    answer: "Pruning",
+    options: ["Mutation", "Pruning", "Crossover", "Selection"],
   },
-
   {
     numb: 40,
-    question: "Which type of grammar is the most restricted in the Chomsky hierarchy?",
-    answer: "Type 3",
-    options: ["Type 0", "Type 1", "Type 2", "Type 3"]
+    question: "Pruning helps to:",
+    answer: "Reduce overfitting",
+    options: [
+      "Increase irrelevant information",
+      "Reduce overfitting",
+      "Increase mutation",
+      "Increase entropy",
+    ],
   },
-
   {
     numb: 41,
-    question: "Which type of grammar is the least restricted?",
-    answer: "Type 0",
-    options: ["Type 0", "Type 1", "Type 2", "Type 3"]
+    question: "Explanation-Based Learning is abbreviated as:",
+    answer: "EBL",
+    options: ["EBL", "EDL", "EBLR", "EIL"],
   },
-
   {
     numb: 42,
-    question: "Type 3 grammar is related to:",
-    answer: "Finite automata",
+    question: "EBL can potentially learn a general rule from:",
+    answer: "One training example",
     options: [
-      "Turing machines only",
-      "Finite automata",
-      "Pushdown automata only",
-      "Linear bounded automata only"
-    ]
+      "Thousands of examples only",
+      "One training example",
+      "No example and no knowledge",
+      "Random data only",
+    ],
   },
-
   {
     numb: 43,
-    question: "A Type 2 grammar is also called:",
-    answer: "Context-free grammar",
+    question: "EBL heavily depends on:",
+    answer: "Background/domain knowledge",
     options: [
-      "Regular grammar",
-      "Context-free grammar",
-      "Context-sensitive grammar",
-      "Unrestricted grammar"
-    ]
+      "Background/domain knowledge",
+      "Random mutations",
+      "Large populations",
+      "High entropy",
+    ],
   },
-
   {
     numb: 44,
-    question: "Which grammar type corresponds to regular languages?",
-    answer: "Type 3",
-    options: ["Type 0", "Type 1", "Type 2", "Type 3"]
+    question:
+      "Which of the following is NOT one of the four key ingredients of EBL?",
+    answer: "Mutation Rate",
+    options: [
+      "Training Example",
+      "Goal Concept",
+      "Domain Theory",
+      "Mutation Rate",
+    ],
   },
-
   {
     numb: 45,
-    question: "Type 3 productions may have the form:",
-    answer: "A → aB or A → a",
+    question: "The four key ingredients of EBL include:",
+    answer: "All four",
     options: [
-      "A → aB or A → a",
-      "AB → CD",
-      "S → SS only",
-      "A → BCDE"
-    ]
+      "Training example",
+      "Goal concept",
+      "Domain theory",
+      "Operationality criteria",
+    ],
   },
-
   {
     numb: 46,
-    question: "In a right-linear grammar, the non-terminal generally appears:",
-    answer: "On the right side after a terminal",
+    question: "In EBL, Domain Theory refers to:",
+    answer: "Background rules and facts already known",
     options: [
-      "Before every terminal",
-      "On the right side after a terminal",
-      "Only on the left side",
-      "Only at the beginning of grammar"
-    ]
+      "Background rules and facts already known",
+      "Random training data",
+      "Genetic population",
+      "Neural network weights",
+    ],
   },
-
   {
     numb: 47,
-    question: "Which machine recognizes regular languages according to the module?",
-    answer: "Finite automaton",
+    question: "Operationality Criteria specify:",
+    answer: "How the final learned rule should be represented so it is usable",
     options: [
-      "Finite automaton",
-      "Only Turing machine",
-      "Only stack machine",
-      "Only compiler"
-    ]
+      "How the final learned rule should be represented so it is usable",
+      "How many neurons are required",
+      "How mutation occurs",
+      "How entropy is calculated",
+    ],
   },
-
-  // =========================
-  // DFA
-  // =========================
-
   {
     numb: 48,
-    question: "DFA stands for:",
-    answer: "Deterministic Finite Automaton",
+    question:
+      "Which learning method primarily relies on statistical patterns across examples?",
+    answer: "Inductive Learning",
     options: [
-      "Deterministic Finite Automaton",
-      "Dynamic Finite Algorithm",
-      "Deterministic Formal Automaton",
-      "Direct Finite Automaton"
-    ]
+      "Explanation-Based Learning",
+      "Inductive Learning",
+      "Genetic Learning",
+      "Rote Learning",
+    ],
   },
-
   {
     numb: 49,
-    question: "A DFA is formally represented as:",
-    answer: "M = (Q, Σ, δ, q0, F)",
-    options: [
-      "M = (Q, Σ, δ, q0, F)",
-      "M = (N, T, P, S)",
-      "M = (Q, T, P, S)",
-      "M = (Σ, δ, F)"
-    ]
+    question:
+      "Which learning method primarily relies on existing background/domain knowledge?",
+    answer: "EBL",
+    options: ["EBL", "Rote learning", "Genetic learning", "Neural learning"],
   },
-
   {
     numb: 50,
-    question: "In DFA, Q represents:",
-    answer: "Set of states",
+    question: "Which statement correctly compares Inductive Learning and EBL?",
+    answer:
+      "Induction uses many examples, while EBL can use one example with background knowledge",
     options: [
-      "Input alphabet",
-      "Set of states",
-      "Final transitions",
-      "Output symbols"
-    ]
+      "Both always require thousands of examples",
+      "Induction uses many examples, while EBL can use one example with background knowledge",
+      "EBL does not require background knowledge",
+      "Induction does not generalize",
+    ],
   },
-
   {
     numb: 51,
-    question: "In DFA, Σ represents:",
-    answer: "Input alphabet",
+    question: "Relevant information means:",
+    answer: "Information that truly influences the outcome",
     options: [
-      "Set of states",
-      "Input alphabet",
-      "Final states",
-      "Transition table"
-    ]
+      "Information that truly influences the outcome",
+      "All available information",
+      "Random information",
+      "Information that increases dataset size",
+    ],
   },
-
   {
     numb: 52,
-    question: "In DFA, δ represents:",
-    answer: "Transition function",
+    question: "Irrelevant attributes can cause a learning algorithm to:",
+    answer: "Find false patterns",
     options: [
-      "Start state",
-      "Transition function",
-      "Final state",
-      "Alphabet"
-    ]
+      "Find false patterns",
+      "Always improve accuracy",
+      "Remove overfitting",
+      "Reduce the dataset automatically",
+    ],
   },
-
   {
     numb: 53,
-    question: "In DFA, q0 represents:",
-    answer: "Initial state",
+    question: "Adding many unnecessary attributes can lead to:",
+    answer: "Curse of dimensionality",
     options: [
-      "Final state",
-      "Initial state",
-      "Dead state",
-      "Output state"
-    ]
+      "Curse of dimensionality",
+      "Mutation",
+      "Crossover",
+      "Rote learning",
+    ],
   },
-
   {
     numb: 54,
-    question: "In DFA, F represents:",
-    answer: "Set of final states",
-    options: [
-      "Set of inputs",
-      "Set of final states",
-      "Transition function",
-      "Start state"
-    ]
+    question: "Focusing on relevant information can reduce:",
+    answer: "Overfitting",
+    options: ["Overfitting", "Generalization", "Accuracy", "Learning ability"],
   },
-
   {
     numb: 55,
-    question: "The DFA transition function is:",
-    answer: "δ : Q × Σ → Q",
-    options: [
-      "δ : Q × Σ → Q",
-      "δ : Q → Σ",
-      "δ : Σ → Q × Q",
-      "δ : Q × Q → Σ"
-    ]
+    question:
+      "Which technique systematically tests subsets of attributes to determine which combination works best?",
+    answer: "Wrapper method",
+    options: ["Wrapper method", "Rote learning", "Mutation", "Selection"],
   },
-
   {
     numb: 56,
-    question: "For every state and input symbol, a DFA has:",
-    answer: "Exactly one next state",
+    question: "A filter method generally:",
+    answer: "Scores attributes individually",
     options: [
-      "Zero next states",
-      "Exactly one next state",
-      "Multiple mandatory next states",
-      "Two final states"
-    ]
+      "Scores attributes individually",
+      "Evolves entire populations",
+      "Uses neural networks only",
+      "Uses crossover",
+    ],
   },
-
   {
     numb: 57,
-    question: "The word deterministic means:",
-    answer: "Only one next state is determined",
+    question: "Information Gain can help identify:",
+    answer: "Relevant attributes",
     options: [
-      "No next state exists",
-      "Only one next state is determined",
-      "Many next states are mandatory",
-      "The machine has no states"
-    ]
+      "Relevant attributes",
+      "Genetic chromosomes",
+      "Neural layers only",
+      "CPU speed",
+    ],
   },
-
   {
     numb: 58,
-    question: "Can a DFA have multiple transitions for the same state and same input symbol?",
-    answer: "No",
-    options: ["Yes", "No", "Only for ε", "Only for final states"]
+    question:
+      "Suppose a system predicts whether a fruit is ripe. Which is most likely irrelevant?",
+    answer: "Shopkeeper's name",
+    options: ["Colour", "Firmness", "Shopkeeper's name", "Sweetness/smell"],
   },
-
   {
     numb: 59,
-    question: "A DFA accepts a string when computation ends in:",
-    answer: "A final state",
+    question: "Neural networks are inspired by:",
+    answer: "Human brain",
     options: [
-      "Initial state only",
-      "A final state",
-      "Any state",
-      "No state"
-    ]
+      "Human brain",
+      "Genetic algorithms",
+      "Decision trees",
+      "Databases",
+    ],
   },
-
   {
     numb: 60,
-    question: "In a DFA, each input symbol causes:",
-    answer: "Exactly one transition",
-    options: [
-      "Exactly one transition",
-      "No transition always",
-      "Multiple transitions",
-      "Only ε-transition"
-    ]
+    question: "The basic processing units of a neural network are called:",
+    answer: "Neurons/nodes",
+    options: ["Chromosomes", "Neurons/nodes", "Branches", "Genes"],
   },
-
   {
     numb: 61,
-    question: "Which machine has exactly one computation path for an input string?",
-    answer: "DFA",
-    options: ["DFA", "NFA", "ε-NFA", "Grammar"]
+    question: "Neural networks are generally organized into:",
+    answer: "Layers",
+    options: ["Rows only", "Layers", "Trees only", "Populations"],
   },
-
   {
     numb: 62,
-    question: "A DFA can be represented using:",
-    answer: "Transition diagram",
-    options: [
-      "Only equations",
-      "Transition diagram",
-      "Only grammar",
-      "Only source code"
-    ]
+    question: "Which layer receives input features?",
+    answer: "Input layer",
+    options: ["Input layer", "Hidden layer", "Output layer", "Fitness layer"],
   },
-
   {
     numb: 63,
-    question: "A DFA transition diagram uses arrows to represent:",
-    answer: "Transitions",
-    options: [
-      "Languages",
-      "Transitions",
-      "Grammars",
-      "Strings only"
-    ]
+    question: "The layer that produces the prediction is:",
+    answer: "Output layer",
+    options: ["Input layer", "Hidden layer", "Output layer", "Mutation layer"],
   },
-
   {
     numb: 64,
-    question: "The initial state in a DFA is indicated by:",
-    answer: "An incoming arrow from outside",
-    options: [
-      "A double circle",
-      "An incoming arrow from outside",
-      "A square",
-      "A star"
-    ]
+    question: "Neural networks learn primarily by adjusting:",
+    answer: "Connection weights",
+    options: ["Branches", "Connection weights", "Chromosomes", "Entropy"],
   },
-
   {
     numb: 65,
-    question: "Final states in a DFA are generally represented by:",
-    answer: "Double circles",
-    options: [
-      "Squares",
-      "Single arrows",
-      "Double circles",
-      "Triangles"
-    ]
+    question:
+      "The prediction is compared with the correct answer to calculate:",
+    answer: "Error",
+    options: ["Fitness", "Error", "Entropy only", "Mutation"],
   },
-
-  // =========================
-  // NFA
-  // =========================
-
   {
     numb: 66,
-    question: "NFA stands for:",
-    answer: "Nondeterministic Finite Automaton",
-    options: [
-      "Nondeterministic Finite Automaton",
-      "New Finite Automaton",
-      "Non-Finite Algorithm",
-      "Normal Finite Automaton"
-    ]
+    question:
+      "The process commonly used to adjust neural network weights based on error is:",
+    answer: "Backpropagation",
+    options: ["Backpropagation", "Crossover", "Pruning", "Selection"],
   },
-
   {
     numb: 67,
-    question: "The NFA transition function is:",
-    answer: "δ : Q × Σ → 2^Q",
+    question:
+      "Modern networks with many hidden layers are commonly associated with:",
+    answer: "Deep Learning",
     options: [
-      "δ : Q × Σ → Q",
-      "δ : Q × Σ → 2^Q",
-      "δ : Q → Σ",
-      "δ : Σ → Q"
-    ]
+      "Rote Learning",
+      "Deep Learning",
+      "Genetic Learning",
+      "Decision Tree Learning",
+    ],
   },
-
   {
     numb: 68,
-    question: "In an NFA, for a state and input symbol there may be:",
-    answer: "Zero, one, or multiple next states",
+    question: "A major limitation of neural networks is:",
+    answer: "They often require large amounts of data and computing power",
     options: [
-      "Exactly one next state only",
-      "Zero, one, or multiple next states",
-      "Only two next states",
-      "Only final states"
-    ]
+      "They cannot learn patterns",
+      "They often require large amounts of data and computing power",
+      "They cannot process inputs",
+      "They cannot adjust weights",
+    ],
   },
-
   {
     numb: 69,
-    question: "NFA can have:",
-    answer: "Multiple possible paths",
+    question: "Neural networks are sometimes called black boxes because:",
+    answer: "Their decisions can be difficult to explain",
     options: [
-      "Only one possible path",
-      "Multiple possible paths",
-      "No paths",
-      "Only final paths"
-    ]
+      "They have no input",
+      "Their decisions can be difficult to explain",
+      "They cannot produce outputs",
+      "They only use black-colored diagrams",
+    ],
   },
-
   {
     numb: 70,
-    question: "An NFA accepts a string if:",
-    answer: "At least one path reaches a final state",
+    question:
+      "Which is an example of neural network application mentioned in the tutorial?",
+    answer: "All of the above",
     options: [
-      "Every path reaches a final state",
-      "At least one path reaches a final state",
-      "No path reaches a final state",
-      "Only the first path reaches a final state"
-    ]
+      "Image recognition",
+      "Speech recognition",
+      "Self-driving cars",
+      "All of the above",
+    ],
   },
-
   {
     numb: 71,
-    question: "Can an NFA have zero transitions for a particular state and input?",
-    answer: "Yes",
-    options: ["Yes", "No", "Only in DFA", "Only for final states"]
+    question: "Genetic learning is inspired by:",
+    answer: "Natural evolution",
+    options: [
+      "Natural evolution",
+      "Human memory",
+      "Database systems",
+      "Decision trees",
+    ],
   },
-
   {
     numb: 72,
-    question: "Which machine allows multiple possible next states?",
-    answer: "NFA",
-    options: ["DFA", "NFA", "Only grammar", "Moore machine"]
+    question: "Genetic learning is also called:",
+    answer: "Genetic Algorithm",
+    options: [
+      "Genetic Algorithm",
+      "Genetic Tree",
+      "Genetic Network",
+      "Genetic Database",
+    ],
   },
-
   {
     numb: 73,
-    question: "Which machine is deterministic?",
-    answer: "DFA",
-    options: ["DFA", "NFA", "ε-NFA", "Both NFA and ε-NFA only"]
+    question: "A genetic algorithm maintains:",
+    answer: "A population of candidate solutions",
+    options: [
+      "A single fixed solution",
+      "A population of candidate solutions",
+      "A single neuron",
+      "A decision tree",
+    ],
   },
-
   {
     numb: 74,
-    question: "Which machine can have zero next states for an input?",
-    answer: "NFA",
-    options: ["DFA", "NFA", "Both never", "Only Moore"]
+    question: "The quality of a candidate solution is measured using:",
+    answer: "Fitness function",
+    options: [
+      "Entropy",
+      "Fitness function",
+      "Information gain",
+      "Backpropagation",
+    ],
   },
-
   {
     numb: 75,
-    question: "The main difference between DFA and NFA is related to:",
-    answer: "Number of possible next states",
+    question: "Solutions with higher fitness are more likely to be:",
+    answer: "Selected as parents",
     options: [
-      "Number of alphabets",
-      "Number of possible next states",
-      "Number of languages",
-      "Number of grammars"
-    ]
+      "Deleted",
+      "Selected as parents",
+      "Ignored",
+      "Mutated immediately",
+    ],
   },
-
-  // =========================
-  // DFA-NFA EQUIVALENCE
-  // =========================
-
   {
     numb: 76,
-    question: "Are DFA and NFA equivalent in computational power?",
-    answer: "Yes",
-    options: ["Yes", "No", "Only sometimes", "Only for ε"]
+    question: "Combining parts of two parent solutions is called:",
+    answer: "Crossover",
+    options: ["Mutation", "Crossover", "Selection", "Pruning"],
   },
-
   {
     numb: 77,
-    question: "Every NFA can be converted into:",
-    answer: "An equivalent DFA",
-    options: [
-      "Only a grammar",
-      "An equivalent DFA",
-      "Only a Moore machine",
-      "Nothing"
-    ]
+    question: "A small random change in a solution is called:",
+    answer: "Mutation",
+    options: ["Crossover", "Selection", "Mutation", "Entropy"],
   },
-
   {
     numb: 78,
-    question: "The standard method for converting NFA to DFA is:",
-    answer: "Subset construction",
+    question:
+      "Which sequence correctly represents the major genetic algorithm operations?",
+    answer: "Selection → Crossover → Mutation",
     options: [
-      "Table filling",
-      "Subset construction",
-      "Grammar construction",
-      "String reversal"
-    ]
+      "Selection → Crossover → Mutation",
+      "Mutation → Selection → Entropy",
+      "Pruning → Selection → Backpropagation",
+      "Entropy → Mutation → Pruning",
+    ],
   },
-
   {
     numb: 79,
-    question: "Subset construction is also known as:",
-    answer: "Powerset construction",
-    options: [
-      "State elimination",
-      "Powerset construction",
-      "Grammar construction",
-      "Output construction"
-    ]
+    question: "A candidate solution is often represented as a:",
+    answer: "Chromosome/string",
+    options: ["Chromosome/string", "Decision tree only", "Neuron", "Leaf"],
   },
-
   {
     numb: 80,
-    question: "If an NFA has n states, the equivalent DFA can have at most:",
-    answer: "2^n states",
+    question: "What is one purpose of mutation?",
+    answer: "To explore new possibilities",
     options: [
-      "n states",
-      "n² states",
-      "2^n states",
-      "n+2 states"
-    ]
+      "To explore new possibilities",
+      "To calculate entropy",
+      "To build a decision tree",
+      "To remove all solutions",
+    ],
   },
-
   {
     numb: 81,
-    question: "If an NFA has 3 states, maximum possible DFA states are:",
-    answer: "8",
-    options: ["3", "6", "8", "9"]
+    question: "Genetic algorithms:",
+    answer: "Do not guarantee the absolute best solution",
+    options: [
+      "Always guarantee the absolute best solution",
+      "Do not guarantee the absolute best solution",
+      "Never require computation",
+      "Only work with labelled examples",
+    ],
   },
-
   {
     numb: 82,
-    question: "If an NFA has 4 states, 2^n gives:",
-    answer: "16",
-    options: ["8", "12", "16", "20"]
+    question: "Genetic algorithms are particularly useful when:",
+    answer: "The search space is huge",
+    options: [
+      "The search space is huge",
+      "There is only one possible solution",
+      "No fitness function exists",
+      "No candidate solutions exist",
+    ],
   },
-
   {
     numb: 83,
-    question: "In subset construction, a DFA state represents:",
-    answer: "A subset of NFA states",
-    options: [
-      "One alphabet symbol",
-      "A subset of NFA states",
-      "Only one final state",
-      "A grammar"
-    ]
+    question: "Which operation combines traits from two parent solutions?",
+    answer: "Crossover",
+    options: ["Mutation", "Crossover", "Fitness evaluation", "Pruning"],
   },
-
   {
     numb: 84,
-    question: "The DFA obtained from an NFA accepts:",
-    answer: "The same language as the NFA",
-    options: [
-      "A completely different language",
-      "The same language as the NFA",
-      "Only ε",
-      "No language"
-    ]
+    question: "Which operation introduces a small random change?",
+    answer: "Mutation",
+    options: ["Selection", "Crossover", "Mutation", "Entropy"],
   },
-
   {
     numb: 85,
-    question: "NFA is generally useful because it can:",
-    answer: "Represent multiple possible transitions",
+    question:
+      "Which of the following can be solved using genetic algorithms according to the tutorial?",
+    answer: "All of the above",
     options: [
-      "Remove all states",
-      "Represent multiple possible transitions",
-      "Have no alphabet",
-      "Eliminate final states"
-    ]
+      "Travelling Salesman Problem",
+      "Delivery route optimization",
+      "Timetable optimization",
+      "All of the above",
+    ],
   },
-
-  // =========================
-  // ε-NFA
-  // =========================
-
   {
     numb: 86,
-    question: "An ε-transition occurs:",
-    answer: "Without consuming an input symbol",
-    options: [
-      "Only after consuming two symbols",
-      "Without consuming an input symbol",
-      "Only after final state",
-      "Only in DFA"
-    ]
+    question:
+      "Which learning method needs the least direct reasoning from the learner?",
+    answer: "Rote learning",
+    options: ["Rote learning", "Inductive learning", "EBL", "Genetic learning"],
   },
-
   {
     numb: 87,
-    question: "Which automaton allows ε-transitions?",
-    answer: "ε-NFA",
-    options: ["DFA", "ε-NFA", "Only Moore", "Only grammar"]
+    question: "Which learning method generalizes from many labelled examples?",
+    answer: "Inductive learning",
+    options: ["EBL", "Inductive learning", "Rote learning", "Genetic learning"],
   },
-
   {
     numb: 88,
-    question: "ε is used to represent:",
-    answer: "Empty string",
-    options: ["Final state", "Empty string", "Alphabet", "Transition table"]
+    question:
+      "Which learning method can generalize from one example because it already possesses domain knowledge?",
+    answer: "EBL",
+    options: ["Inductive learning", "Rote learning", "EBL", "Genetic learning"],
   },
-
   {
     numb: 89,
-    question: "ε-closure of a state contains:",
-    answer: "States reachable using zero or more ε-transitions",
+    question: "Which pair is correctly matched?",
+    answer: "Genetic Algorithm — Selection, Crossover, Mutation",
     options: [
-      "Only final states",
-      "States reachable using zero or more ε-transitions",
-      "Only unreachable states",
-      "Only the initial state"
-    ]
+      "Decision Tree — Connection weights",
+      "Neural Network — Information Gain",
+      "Genetic Algorithm — Selection, Crossover, Mutation",
+      "EBL — Mutation",
+    ],
   },
-
   {
     numb: 90,
-    question: "The ε-closure of a state always contains:",
-    answer: "The state itself",
+    question: "Which pair is INCORRECTLY matched?",
+    answer: "Entropy — Genetic Algorithm",
     options: [
-      "Only final states",
-      "The state itself",
-      "Only unreachable states",
-      "No state"
-    ]
+      "ID3 — Decision Tree",
+      "Backpropagation — Neural Network",
+      "Mutation — Genetic Algorithm",
+      "Entropy — Genetic Algorithm",
+    ],
   },
-
   {
     numb: 91,
-    question: "ε-transitions consume:",
-    answer: "No input symbol",
-    options: [
-      "One input symbol",
-      "Two input symbols",
-      "No input symbol",
-      "All input symbols"
-    ]
+    question:
+      "If all examples in a decision-tree group belong to the same class, the entropy is:",
+    answer: "Zero",
+    options: ["Maximum", "Zero", "0.5", "Infinite"],
   },
-
   {
     numb: 92,
-    question: "An ε-NFA can be converted to:",
-    answer: "An equivalent NFA",
+    question: "ID3 selects an attribute based primarily on:",
+    answer: "Highest information gain",
     options: [
-      "Only a grammar",
-      "An equivalent NFA",
-      "Only a Moore machine",
-      "No other machine"
-    ]
+      "Lowest fitness",
+      "Highest information gain",
+      "Highest mutation rate",
+      "Lowest number of examples",
+    ],
   },
-
   {
     numb: 93,
-    question: "After removing ε-transitions, the resulting NFA can be converted to:",
-    answer: "DFA",
-    options: [
-      "DFA",
-      "Only grammar",
-      "Only Mealy machine",
-      "Nothing"
-    ]
+    question:
+      "Which learning approach is most dependent on good background knowledge?",
+    answer: "EBL",
+    options: ["Rote learning", "EBL", "Genetic learning", "Neural learning"],
   },
-
   {
     numb: 94,
-    question: "The purpose of ε-closure is to identify states reachable through:",
-    answer: "ε-transitions",
-    options: [
-      "Only input 0",
-      "Only input 1",
-      "ε-transitions",
-      "Final states"
-    ]
+    question: "Which one is NOT a genetic algorithm operation?",
+    answer: "Backpropagation",
+    options: ["Selection", "Crossover", "Mutation", "Backpropagation"],
   },
-
   {
     numb: 95,
-    question: "ε-NFA has greater computational power than DFA.",
-    answer: "False",
-    options: ["True", "False", "Only sometimes", "Cannot be determined"]
-  },
-
-  {
-    numb: 96,
-    question: "An ε-NFA and DFA can recognize:",
-    answer: "The same class of languages",
+    question: "Which one is NOT a neural network learning operation?",
+    answer: "Crossover",
     options: [
-      "Completely different classes",
-      "The same class of languages",
-      "Only finite strings",
-      "Only empty strings"
-    ]
+      "Adjusting weights",
+      "Comparing prediction with correct answer",
+      "Backpropagation",
+      "Crossover",
+    ],
   },
-
-  // =========================
-  // DFA MINIMIZATION
-  // =========================
-
-  {
-    numb: 97,
-    question: "DFA minimization is used to:",
-    answer: "Reduce the number of states",
-    options: [
-      "Increase the alphabet",
-      "Reduce the number of states",
-      "Remove all transitions",
-      "Create a grammar"
-    ]
-  },
-
-  {
-    numb: 98,
-    question: "Two states are equivalent if:",
-    answer: "They cannot be distinguished by any input string",
-    options: [
-      "They have different names",
-      "They cannot be distinguished by any input string",
-      "They are both initial",
-      "They have different alphabets"
-    ]
-  },
-
-  {
-    numb: 99,
-    question: "Before minimization, unreachable states should be:",
-    answer: "Removed",
-    options: [
-      "Duplicated",
-      "Removed",
-      "Made final",
-      "Made initial"
-    ]
-  },
-
-  {
-    numb: 100,
-    question: "The table-filling method is used for:",
-    answer: "DFA minimization",
-    options: [
-      "NFA creation",
-      "DFA minimization",
-      "Grammar generation",
-      "String concatenation"
-    ]
-  },
-
-  {
-    numb: 101,
-    question: "In DFA minimization, states are initially divided into:",
-    answer: "Final and non-final states",
-    options: [
-      "Initial and final only",
-      "Final and non-final states",
-      "Odd and even states",
-      "Input and output states"
-    ]
-  },
-
-  {
-    numb: 102,
-    question: "The partitioning process in DFA minimization is:",
-    answer: "Repeated until no further refinement is possible",
-    options: [
-      "Performed only once",
-      "Repeated until no further refinement is possible",
-      "Never repeated",
-      "Done only for NFA"
-    ]
-  },
-
-  {
-    numb: 103,
-    question: "Equivalent states can be:",
-    answer: "Merged",
-    options: [
-      "Deleted individually without replacement",
-      "Merged",
-      "Converted into symbols",
-      "Converted into grammars"
-    ]
-  },
-
-  {
-    numb: 104,
-    question: "The minimized DFA has:",
-    answer: "The smallest number of equivalent states",
-    options: [
-      "Maximum states",
-      "The smallest number of equivalent states",
-      "No final states",
-      "No transitions"
-    ]
-  },
-
-  {
-    numb: 105,
-    question: "A minimized DFA recognizes:",
-    answer: "The same language as the original DFA",
-    options: [
-      "A different language",
-      "The same language as the original DFA",
-      "Only ε",
-      "No language"
-    ]
-  },
-
-  {
-    numb: 106,
-    question: "The minimized DFA is unique up to:",
-    answer: "Renaming of states",
-    options: [
-      "Changing the alphabet",
-      "Renaming of states",
-      "Changing the language",
-      "Changing all transitions"
-    ]
-  },
-
-  {
-    numb: 107,
-    question: "Myhill–Nerode method is associated with:",
-    answer: "State equivalence and minimization",
-    options: [
-      "String concatenation",
-      "State equivalence and minimization",
-      "Grammar creation",
-      "ε-transition creation"
-    ]
-  },
-
-  {
-    numb: 108,
-    question: "In table-filling minimization, distinguishable states are:",
-    answer: "Marked",
-    options: ["Merged", "Marked", "Deleted immediately", "Ignored"]
-  },
-
-  {
-    numb: 109,
-    question: "If two states are distinguishable, they:",
-    answer: "Cannot be merged",
-    options: [
-      "Must be merged",
-      "Cannot be merged",
-      "Must become initial",
-      "Must become final"
-    ]
-  },
-
-  {
-    numb: 110,
-    question: "The main objective of DFA minimization is:",
-    answer: "Obtain an equivalent DFA with minimum states",
-    options: [
-      "Create more states",
-      "Obtain an equivalent DFA with minimum states",
-      "Remove the alphabet",
-      "Remove the language"
-    ]
-  },
-
-  // =========================
-  // MEALY MACHINE
-  // =========================
-
-  {
-    numb: 111,
-    question: "A Mealy machine produces output based on:",
-    answer: "Current state and current input",
-    options: [
-      "Current state only",
-      "Current state and current input",
-      "Final state only",
-      "Alphabet size only"
-    ]
-  },
-
-  {
-    numb: 112,
-    question: "The output of a Mealy machine is associated with:",
-    answer: "Transitions",
-    options: [
-      "States only",
-      "Transitions",
-      "Alphabet only",
-      "Initial state only"
-    ]
-  },
-
-  {
-    numb: 113,
-    question: "Mealy machine output depends on:",
-    answer: "State and input",
-    options: [
-      "Only state",
-      "Only input",
-      "State and input",
-      "Only final state"
-    ]
-  },
-
-  {
-    numb: 114,
-    question: "In a Mealy machine, output can change when:",
-    answer: "Input changes",
-    options: [
-      "Only state is deleted",
-      "Input changes",
-      "Alphabet is removed",
-      "Grammar changes"
-    ]
-  },
-
-  {
-    numb: 115,
-    question: "Which machine associates output with transitions?",
-    answer: "Mealy machine",
-    options: [
-      "Moore machine",
-      "Mealy machine",
-      "DFA",
-      "NFA"
-    ]
-  },
-
-  {
-    numb: 116,
-    question: "A Mealy machine can produce output on:",
-    answer: "Transitions",
-    options: [
-      "Only states",
-      "Transitions",
-      "Only final states",
-      "Only initial state"
-    ]
-  },
-
-  {
-    numb: 117,
-    question: "The output sequence of a Mealy machine generally has length:",
-    answer: "Equal to the input sequence",
-    options: [
-      "Always zero",
-      "Equal to the input sequence",
-      "One more than input always",
-      "Twice the input always"
-    ]
-  },
-
-  // =========================
-  // MOORE MACHINE
-  // =========================
-
-  {
-    numb: 118,
-    question: "A Moore machine produces output based on:",
-    answer: "Current state",
-    options: [
-      "Current input only",
-      "Current state",
-      "Previous grammar",
-      "Alphabet size"
-    ]
-  },
-
-  {
-    numb: 119,
-    question: "The output of a Moore machine is associated with:",
-    answer: "States",
-    options: [
-      "Transitions",
-      "States",
-      "Input symbols only",
-      "Production rules"
-    ]
-  },
-
-  {
-    numb: 120,
-    question: "Which machine associates output with states?",
-    answer: "Moore machine",
-    options: [
-      "Mealy machine",
-      "Moore machine",
-      "DFA",
-      "NFA"
-    ]
-  }
-
 ];
